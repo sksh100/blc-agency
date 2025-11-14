@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-luxury-medium-gray;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-luxury-white text-luxury-dark-gray;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+  
+  /* Disable text selection */
+  * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Allow text selection for input/textarea */
+  input, textarea {
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+  }
+  
+  /* Disable right-click context menu */
+  img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    pointer-events: none;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-luxury-royal-blue via-luxury-deep-blue to-luxury-royal-blue;
+  }
+  
+  .glass-effect {
+    @apply bg-white/90 backdrop-blur-md border border-luxury-light-gray;
+  }
+  
+  .luxury-shadow {
+    box-shadow: 0 10px 40px rgba(30, 58, 95, 0.15), 0 0 20px rgba(30, 58, 95, 0.08);
+  }
+  
+  .luxury-glow {
+    box-shadow: 0 0 30px rgba(30, 58, 95, 0.4);
+  }
+  
+  .section-padding {
+    @apply py-32 md:py-48 px-4 sm:px-8 lg:px-12;
+  }
+
+  /* Portfolio Grid Auto-rows */
+  .auto-rows-\[280px\] > * {
+    min-height: 280px;
+  }
+
+  /* Museum-style typography */
+  .museum-heading {
+    font-family: var(--font-playfair);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  .museum-body {
+    font-family: var(--font-cormorant), 'Georgia', serif;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 1.9;
+    font-size: 1.15em;
+  }
+
+  .museum-label {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(30, 58, 95, 0.6);
+  }
+
+  /* Ensure content is visible - animations will enhance */
+  /* Framer Motion will override these on client-side */
+
+  /* Premium shimmer effect */
+  .premium-shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .premium-shimmer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(192, 192, 192, 0.1),
+      transparent
+    );
+    animation: shimmer-sweep 8s infinite;
+  }
+
+  @keyframes shimmer-sweep {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAFAFA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #1E3A5F, #0A1F3D);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #2E5C8A, #1E3A5F);
+}
+
+/* Smooth animations */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+  .shimmer {
+    animation: shimmer 3s infinite;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(30, 58, 95, 0.1) 50%,
+      transparent 100%
+    );
+    background-size: 1000px 100%;
+  }
+
