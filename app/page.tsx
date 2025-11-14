@@ -5,8 +5,6 @@ import Hero from '@/components/Hero'
 import AboutUs from '@/components/AboutUs'
 import Services from '@/components/Services'
 import DigitalPresencePreview from '@/components/DigitalPresencePreview'
-import Portfolio from '@/components/Portfolio'
-import Testimonials from '@/components/Testimonials'
 import Contact from '@/components/Contact'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
@@ -54,8 +52,6 @@ export default function Home() {
       <AboutUs />
       <Services />
       <DigitalPresencePreview />
-      <Portfolio />
-      <Testimonials />
       <Contact />
       <Footer />
       <CookieBanner />

@@ -75,7 +75,6 @@ export default function Navigation() {
 
               {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6">
-            <LanguageSwitcher />
             {navItems.map((item) => (
               <div key={item.key} className="relative" ref={item.hasDropdown ? dropdownRef : null}>
                 {item.hasDropdown ? (
@@ -143,6 +142,7 @@ export default function Navigation() {
                 )}
               </div>
             ))}
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
