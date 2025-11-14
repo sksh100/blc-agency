@@ -5,8 +5,10 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import SectionParticles from './SectionParticles'
 import Image from 'next/image'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function AboutUs() {
+  const { t } = useLanguage()
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.3 })
 
@@ -27,10 +29,10 @@ export default function AboutUs() {
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           className="mb-16 sm:mb-20 md:mb-24 lg:mb-32"
         >
-          <p className="museum-label mb-4 sm:mb-6">Heritage</p>
+          <p className="museum-label mb-4 sm:mb-6">{t('about.label')}</p>
           <h2 className="museum-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-luxury-dark-gray mb-4 sm:mb-6 leading-[1.05] tracking-tight">
-            <span className="text-luxury-dark-gray">About</span>{' '}
-            <span className="text-gradient">Us</span>
+            <span className="text-luxury-dark-gray">{t('about.title').split(' ')[0]}</span>{' '}
+            <span className="text-gradient">{t('about.title').split(' ').slice(1).join(' ')}</span>
           </h2>
           <div className="w-32 h-px bg-luxury-royal-blue/30 mt-8" />
         </motion.div>
@@ -44,29 +46,16 @@ export default function AboutUs() {
             className="space-y-8 md:pr-8"
           >
             <p className="museum-body text-lg md:text-xl text-luxury-medium-gray leading-relaxed">
-              Based in Abu Dhabi, BLC Agency represents the pinnacle of luxury brand consulting and 
-              strategic communication in the GCC. With years of dedicated experience serving ultra-high-net-worth 
-              individuals and discerning luxury enterprises, we have cultivated an unparalleled understanding 
-              of GCC culture, preferences, and the sophisticated nuances that define excellence in this region.
+              {t('about.paragraph1')}
             </p>
             <p className="museum-body text-lg md:text-xl text-luxury-medium-gray leading-relaxed">
-              Our expertise is rooted in a profound network of relationships across the Gulf—from elite 
-              circles to influential business leaders, media personalities, and cultural tastemakers. 
-              This extensive network, combined with our deep cultural intelligence, enables us to deliver 
-              results that transcend conventional marketing and public relations.
+              {t('about.paragraph2')}
             </p>
             <p className="museum-body text-lg md:text-xl text-luxury-medium-gray leading-relaxed">
-              We collaborate exclusively with luxury branding experts from ESSEC Business School in France, 
-              one of the world's most prestigious institutions for luxury brand management. This strategic 
-              partnership brings together the refined sophistication of European luxury heritage with our 
-              intimate knowledge of GCC markets—creating an unmatched synergy that delivers exceptional 
-              outcomes for our ultra-high-net-worth clientele.
+              {t('about.paragraph3')}
             </p>
             <p className="museum-body text-lg md:text-xl text-luxury-medium-gray leading-relaxed">
-              Every engagement is executed with the precision and discretion that ultra-luxury demands. 
-              We are true experts who know not only what needs to be done, but precisely how to deliver 
-              excellence that exceeds the most exacting standards. Our work is not merely service—it is 
-              the curation of legacies for those who accept nothing less than perfection.
+              {t('about.paragraph4')}
             </p>
           </motion.div>
 
@@ -94,8 +83,8 @@ export default function AboutUs() {
                         <span className="text-luxury-royal-blue font-bold text-xl">01</span>
                       </div>
                       <div>
-                        <h3 className="text-xl font-serif font-semibold text-luxury-dark-gray mb-1">GCC Cultural Mastery</h3>
-                        <p className="text-luxury-medium-gray text-sm font-light">Years of experience serving ultra-high-net-worth clients across the Gulf</p>
+                        <h3 className="text-xl font-serif font-semibold text-luxury-dark-gray mb-1">{t('about.keyPoint1Title')}</h3>
+                        <p className="text-luxury-medium-gray text-sm font-light">{t('about.keyPoint1Desc')}</p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-4">
@@ -103,8 +92,8 @@ export default function AboutUs() {
                         <span className="text-luxury-royal-blue font-bold text-xl">02</span>
                       </div>
                       <div>
-                        <h3 className="text-xl font-serif font-semibold text-luxury-dark-gray mb-1">ESSEC Excellence</h3>
-                        <p className="text-luxury-medium-gray text-sm font-light">Strategic partnership with luxury branding experts from France</p>
+                        <h3 className="text-xl font-serif font-semibold text-luxury-dark-gray mb-1">{t('about.keyPoint2Title')}</h3>
+                        <p className="text-luxury-medium-gray text-sm font-light">{t('about.keyPoint2Desc')}</p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-4">
@@ -112,8 +101,8 @@ export default function AboutUs() {
                         <span className="text-luxury-royal-blue font-bold text-xl">03</span>
                       </div>
                       <div>
-                        <h3 className="text-xl font-serif font-semibold text-luxury-dark-gray mb-1">Elite Network</h3>
-                        <p className="text-luxury-medium-gray text-sm font-light">Extensive relationships across elite, business, and cultural circles</p>
+                        <h3 className="text-xl font-serif font-semibold text-luxury-dark-gray mb-1">{t('about.keyPoint3Title')}</h3>
+                        <p className="text-luxury-medium-gray text-sm font-light">{t('about.keyPoint3Desc')}</p>
                   </div>
                 </div>
               </div>

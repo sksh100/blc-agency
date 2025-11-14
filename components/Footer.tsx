@@ -36,11 +36,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm">
-                  {t('nav.portfolio')}
-                </Link>
-              </li>
-              <li>
                 <Link href="/contact" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm">
                   {t('nav.contact')}
                 </Link>
@@ -54,37 +49,37 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="/services/gcc-luxury-market-pr" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
-                  GCC Luxury Market PR
+                  {t('services.categories.gccPR.title')}
                 </Link>
               </li>
               <li>
                 <Link href="/services/luxury-hospitality-enhancement" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
-                  Hospitality Enhancement
+                  {t('services.categories.hospitality.title')}
                 </Link>
               </li>
               <li>
                 <Link href="/services/government-destination-strategy" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
-                  Destination Strategy
+                  {t('services.categories.government.title')}
                 </Link>
               </li>
               <li>
                 <Link href="/services/fashion-industry-consulting" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
-                  Fashion Consulting
+                  {t('services.categories.fashion.title')}
                 </Link>
               </li>
               <li>
                 <Link href="/services/luxury-concierge-services" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
-                  Concierge Services
+                  {t('services.categories.concierge.title')}
                 </Link>
               </li>
               <li>
                 <Link href="/services/digital-presence-brand-experience" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
-                  Digital Presence & Branding
+                  {t('services.categories.digital.title')}
                 </Link>
               </li>
               <li>
                 <Link href="/services/family-offices-staff-excellence" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
-                  Family Offices & Staff Training
+                  {t('services.categories.familyOffices.title')}
                 </Link>
               </li>
             </ul>

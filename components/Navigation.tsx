@@ -33,20 +33,19 @@ export default function Navigation() {
   }, [])
 
   const servicesItems = [
-    { name: 'GCC Luxury Market PR & Communication', slug: 'gcc-luxury-market-pr' },
-    { name: 'Luxury Hospitality Enhancement', slug: 'luxury-hospitality-enhancement' },
-    { name: 'Government & Destination Strategy', slug: 'government-destination-strategy' },
-    { name: 'Fashion Industry Consulting', slug: 'fashion-industry-consulting' },
-    { name: 'Luxury Concierge Services', slug: 'luxury-concierge-services' },
-    { name: 'Digital Presence & Brand Experience', slug: 'digital-presence-brand-experience' },
-    { name: 'Family Offices & Staff Excellence', slug: 'family-offices-staff-excellence' },
+    { name: t('services.categories.gccPR.title'), slug: 'gcc-luxury-market-pr' },
+    { name: t('services.categories.hospitality.title'), slug: 'luxury-hospitality-enhancement' },
+    { name: t('services.categories.government.title'), slug: 'government-destination-strategy' },
+    { name: t('services.categories.fashion.title'), slug: 'fashion-industry-consulting' },
+    { name: t('services.categories.concierge.title'), slug: 'luxury-concierge-services' },
+    { name: t('services.categories.digital.title'), slug: 'digital-presence-brand-experience' },
+    { name: t('services.categories.familyOffices.title'), slug: 'family-offices-staff-excellence' },
   ]
 
   const navItems = [
     { name: t('nav.home'), href: '/', key: 'home' },
     { name: t('nav.about'), href: '/about', key: 'about' },
     { name: t('nav.services'), href: '/services', hasDropdown: true, key: 'services' },
-    { name: t('nav.portfolio'), href: '/portfolio', key: 'portfolio' },
     { name: t('nav.contact'), href: '/contact', key: 'contact' },
   ]
 

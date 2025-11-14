@@ -71,14 +71,23 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     }
   }
 
-  const t = (key: string): string => {
+  const t = (key: string): any => {
+    if (!translations || Object.keys(translations).length === 0) {
+      // Return key as fallback during initial load
+      return key
+    }
     const keys = key.split('.')
     let value: any = translations
     for (const k of keys) {
       value = value?.[k]
-      if (value === undefined) return key
+      if (value === undefined) {
+        // Return key as fallback if translation not found
+        return key
+      }
     }
-    return typeof value === 'string' ? value : key
+    // If value is an object, return it (for cases like portfolio.items.1)
+    // Otherwise return the string/number value
+    return typeof value === 'object' && value !== null ? value : (value || key)
   }
 
   return (

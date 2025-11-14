@@ -5,94 +5,47 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
-
-const portfolioItems = [
-  {
-    id: 1,
-    title: 'European Luxury Fashion Brand',
-    category: 'Fashion Production',
-    description: 'GCC market entry with culturally adapted PR and brand storytelling',
-    gradient: 'from-luxury-royal-blue via-luxury-deep-blue to-luxury-navy-blue',
-    pattern: 'radial',
-    size: 'large',
-  },
-  {
-    id: 2,
-    title: 'UAE Luxury Resort',
-    category: 'Hospitality Enhancement',
-    description: 'GCC traveler-focused experience design and PR campaign',
-    gradient: 'from-luxury-deep-blue via-luxury-royal-blue to-luxury-light-blue',
-    pattern: 'linear',
-    size: 'medium',
-  },
-  {
-    id: 3,
-    title: 'Swiss Watchmaker',
-    category: 'GCC PR & Communication',
-    description: 'Press releases and influencer partnerships for GCC expansion',
-    gradient: 'from-luxury-navy-blue via-luxury-deep-blue to-luxury-royal-blue',
-    pattern: 'diagonal',
-    size: 'medium',
-  },
-  {
-    id: 4,
-    title: 'Italian Fashion House',
-    category: 'Fashion Production',
-    description: 'End-to-end production facilitation and GCC fashion PR',
-    gradient: 'from-luxury-royal-blue via-luxury-light-blue to-luxury-deep-blue',
-    pattern: 'radial',
-    size: 'large',
-  },
-  {
-    id: 5,
-    title: 'GCC Destination Branding',
-    category: 'Government Strategy',
-    description: 'Luxury tourism blueprint and destination positioning',
-    gradient: 'from-luxury-deep-blue via-luxury-navy-blue to-luxury-royal-blue',
-    pattern: 'linear',
-    size: 'tall',
-  },
-  {
-    id: 6,
-    title: 'Fine Dining Group',
-    category: 'Hospitality Enhancement',
-    description: 'Menu refinement and cultural alignment for GCC guests',
-    gradient: 'from-luxury-light-blue via-luxury-royal-blue to-luxury-deep-blue',
-    pattern: 'diagonal',
-    size: 'medium',
-  },
-  {
-    id: 7,
-    title: 'Luxury Brand Website Transformation',
-    category: 'Digital Presence',
-    description: 'Editorial-style website redesign with minimal, high-end aesthetics',
-    gradient: 'from-luxury-navy-blue via-luxury-royal-blue to-luxury-light-blue',
-    pattern: 'radial',
-    size: 'wide',
-  },
-  {
-    id: 8,
-    title: 'GCC Luxury Instagram Strategy',
-    category: 'Digital Presence',
-    description: 'Culturally fluent content in Vogue/Harper\'s Bazaar Arabia tone',
-    gradient: 'from-luxury-royal-blue via-luxury-deep-blue to-luxury-navy-blue',
-    pattern: 'linear',
-    size: 'medium',
-  },
-  {
-    id: 9,
-    title: 'Luxury Brand Content Reels',
-    category: 'Digital Presence',
-    description: 'Editorial-style social media content production and digital storytelling',
-    gradient: 'from-luxury-deep-blue via-luxury-light-blue to-luxury-royal-blue',
-    pattern: 'diagonal',
-    size: 'medium',
-  },
-]
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Portfolio() {
+  const { t } = useLanguage()
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.1 })
+
+  const portfolioItemsData = [
+    { id: 1, key: '1' },
+    { id: 2, key: '2' },
+    { id: 3, key: '3' },
+    { id: 4, key: '4' },
+    { id: 5, key: '5' },
+    { id: 6, key: '6' },
+    { id: 7, key: '7' },
+    { id: 8, key: '8' },
+    { id: 9, key: '9' },
+  ]
+
+  const portfolioItems = portfolioItemsData.map((item) => {
+    const itemData = t(`portfolio.items.${item.key}`) as any
+    return {
+      id: item.id,
+      title: itemData?.title || '',
+      category: itemData?.category || '',
+      description: itemData?.description || '',
+      gradient: [
+        'from-luxury-royal-blue via-luxury-deep-blue to-luxury-navy-blue',
+        'from-luxury-deep-blue via-luxury-royal-blue to-luxury-light-blue',
+        'from-luxury-navy-blue via-luxury-deep-blue to-luxury-royal-blue',
+        'from-luxury-royal-blue via-luxury-light-blue to-luxury-deep-blue',
+        'from-luxury-deep-blue via-luxury-navy-blue to-luxury-royal-blue',
+        'from-luxury-light-blue via-luxury-royal-blue to-luxury-deep-blue',
+        'from-luxury-navy-blue via-luxury-royal-blue to-luxury-light-blue',
+        'from-luxury-royal-blue via-luxury-deep-blue to-luxury-navy-blue',
+        'from-luxury-deep-blue via-luxury-light-blue to-luxury-royal-blue',
+      ][item.id - 1],
+      pattern: ['radial', 'linear', 'diagonal', 'radial', 'linear', 'diagonal', 'radial', 'linear', 'diagonal'][item.id - 1] as 'radial' | 'linear' | 'diagonal',
+      size: ['large', 'medium', 'medium', 'large', 'tall', 'medium', 'wide', 'medium', 'medium'][item.id - 1] as string,
+    }
+  }).filter(item => item.title)
 
   const getGridClasses = (size: string) => {
     switch (size) {
@@ -116,13 +69,13 @@ export default function Portfolio() {
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           className="mb-16 sm:mb-20 md:mb-24 lg:mb-32"
         >
-          <p className="museum-label mb-4 sm:mb-6">Works</p>
+          <p className="museum-label mb-4 sm:mb-6">{t('portfolio.label')}</p>
           <h2 className="museum-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-luxury-dark-gray mb-6 sm:mb-8 leading-[1.05] tracking-tight">
-            <span className="text-luxury-dark-gray">Our</span>{' '}
-            <span className="text-gradient">Portfolio</span>
+            <span className="text-luxury-dark-gray">{t('portfolio.title').split(' ')[0]}</span>{' '}
+            <span className="text-gradient">{t('portfolio.title').split(' ').slice(1).join(' ')}</span>
           </h2>
           <p className="museum-body text-base sm:text-lg md:text-xl lg:text-2xl text-luxury-medium-gray max-w-2xl leading-relaxed">
-            Excellence delivered across GCC and Europe—events produced, brands elevated, destinations redefined
+            {t('portfolio.subtitle')}
           </p>
           <div className="w-32 h-px bg-luxury-royal-blue/30 mt-12" />
         </motion.div>
@@ -204,11 +157,11 @@ export default function Portfolio() {
                       {item.description}
                     </p>
 
-                    {/* CTA Arrow */}
-                    <div className="flex items-center space-x-2 text-white/70 group-hover:text-white transition-colors duration-300 mt-2 pointer-events-auto">
-                      <span className="text-xs md:text-sm uppercase tracking-wider font-light">Explore</span>
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                    </div>
+                        {/* CTA Arrow */}
+                        <div className="flex items-center space-x-2 text-white/70 group-hover:text-white transition-colors duration-300 mt-2 pointer-events-auto">
+                          <span className="text-xs md:text-sm uppercase tracking-wider font-light">{t('portfolio.explore')}</span>
+                          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                        </div>
                   </motion.div>
                 </div>
               </div>

@@ -5,8 +5,10 @@ import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
 import { Mail, Phone, MapPin, Send } from 'lucide-react'
 import SectionParticles from './SectionParticles'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Contact() {
+  const { t } = useLanguage()
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.2 })
   const [formData, setFormData] = useState({
@@ -39,13 +41,13 @@ export default function Contact() {
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
           className="mb-16 sm:mb-20 md:mb-24 lg:mb-32"
         >
-          <p className="museum-label mb-4 sm:mb-6">Contact</p>
+          <p className="museum-label mb-4 sm:mb-6">{t('contact.label')}</p>
           <h2 className="museum-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-luxury-dark-gray mb-6 sm:mb-8 leading-[1.05] tracking-tight">
-            <span className="text-luxury-dark-gray">Book a</span>{' '}
-            <span className="text-gradient">Private Consultation</span>
+            <span className="text-luxury-dark-gray">{t('contact.title').split(' ').slice(0, 3).join(' ')}</span>{' '}
+            <span className="text-gradient">{t('contact.title').split(' ').slice(3).join(' ')}</span>
           </h2>
           <p className="museum-body text-base sm:text-lg md:text-xl lg:text-2xl text-luxury-medium-gray max-w-2xl leading-relaxed">
-            Begin your journey to elevated brand excellence in the GCC and beyond
+            {t('contact.subtitle')}
           </p>
           <div className="w-32 h-px bg-luxury-royal-blue/30 mt-12" />
         </motion.div>
@@ -59,12 +61,11 @@ export default function Contact() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-serif font-semibold text-luxury-dark-gray mb-6">
-                Get In Touch
+              <h3 className="text-xl sm:text-2xl font-serif font-semibold text-luxury-dark-gray mb-6">
+                {t('contact.getInTouch')}
               </h3>
-              <p className="text-luxury-medium-gray font-light leading-relaxed mb-8">
-                We're here to discuss how we can elevate your brand. Reach out to begin 
-                a conversation about your luxury brand's future.
+              <p className="text-luxury-medium-gray font-light leading-relaxed mb-8 text-sm sm:text-base">
+                {t('contact.description')}
               </p>
             </div>
 
@@ -74,7 +75,7 @@ export default function Contact() {
                   <Mail className="w-5 h-5 text-luxury-royal-blue" />
                 </div>
                 <div>
-                  <h4 className="text-luxury-dark-gray font-semibold mb-1">Email</h4>
+                  <h4 className="text-luxury-dark-gray font-semibold mb-1">{t('contact.email')}</h4>
                   <a href="mailto:contact@blcagency.com" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light">
                     contact@blcagency.com
                   </a>
@@ -86,7 +87,7 @@ export default function Contact() {
                   <Phone className="w-5 h-5 text-luxury-royal-blue" />
                 </div>
                 <div>
-                  <h4 className="text-luxury-dark-gray font-semibold mb-1">Phone</h4>
+                  <h4 className="text-luxury-dark-gray font-semibold mb-1">{t('contact.phone')}</h4>
                   <a href="tel:+1234567890" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light">
                     +1 (234) 567-8900
                   </a>
@@ -98,11 +99,9 @@ export default function Contact() {
                   <MapPin className="w-5 h-5 text-luxury-royal-blue" />
                 </div>
                 <div>
-                  <h4 className="text-luxury-dark-gray font-semibold mb-1">Location</h4>
-                  <p className="text-luxury-medium-gray font-light">
-                    Dubai, UAE<br />
-                    Abu Dhabi, UAE<br />
-                    Europe
+                  <h4 className="text-luxury-dark-gray font-semibold mb-1">{t('contact.location')}</h4>
+                  <p className="text-luxury-medium-gray font-light whitespace-pre-line">
+                    {t('contact.locationDetails')}
                   </p>
                 </div>
               </div>
@@ -118,7 +117,7 @@ export default function Contact() {
             <form onSubmit={handleSubmit} className="glass-effect luxury-shadow p-6 sm:p-8 space-y-5 sm:space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-light text-luxury-medium-gray mb-2 uppercase tracking-wider">
-                  Name
+                  {t('contact.form.name')}
                 </label>
                 <input
                   type="text"
@@ -128,13 +127,13 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full bg-white border border-luxury-light-gray px-4 py-3 text-luxury-dark-gray placeholder-luxury-medium-gray focus:outline-none focus:border-luxury-royal-blue transition-colors font-light"
-                  placeholder="Your Name"
+                  placeholder={t('contact.form.namePlaceholder')}
                 />
               </div>
 
               <div>
                 <label htmlFor="email" className="block text-sm font-light text-luxury-medium-gray mb-2 uppercase tracking-wider">
-                  Email
+                  {t('contact.form.email')}
                 </label>
                 <input
                   type="email"
@@ -144,13 +143,13 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full bg-white border border-luxury-light-gray px-4 py-3 text-luxury-dark-gray placeholder-luxury-medium-gray focus:outline-none focus:border-luxury-royal-blue transition-colors font-light"
-                  placeholder="your.email@example.com"
+                  placeholder={t('contact.form.emailPlaceholder')}
                 />
               </div>
 
               <div>
                 <label htmlFor="company" className="block text-sm font-light text-luxury-medium-gray mb-2 uppercase tracking-wider">
-                  Company
+                  {t('contact.form.company')}
                 </label>
                 <input
                   type="text"
@@ -159,13 +158,13 @@ export default function Contact() {
                   value={formData.company}
                   onChange={handleChange}
                   className="w-full bg-white border border-luxury-light-gray px-4 py-3 text-luxury-dark-gray placeholder-luxury-medium-gray focus:outline-none focus:border-luxury-royal-blue transition-colors font-light"
-                  placeholder="Your Company"
+                  placeholder={t('contact.form.companyPlaceholder')}
                 />
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-light text-luxury-medium-gray mb-2 uppercase tracking-wider">
-                  Message
+                  {t('contact.form.message')}
                 </label>
                 <textarea
                   id="message"
@@ -175,7 +174,7 @@ export default function Contact() {
                   required
                   rows={5}
                   className="w-full bg-white border border-luxury-light-gray px-4 py-3 text-luxury-dark-gray placeholder-luxury-medium-gray focus:outline-none focus:border-luxury-royal-blue transition-colors font-light resize-none"
-                  placeholder="Tell us about your project..."
+                  placeholder={t('contact.form.messagePlaceholder')}
                 />
               </div>
 
@@ -185,7 +184,7 @@ export default function Contact() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <span>Send Message</span>
+                <span>{t('contact.form.submit')}</span>
                 <Send className="w-5 h-5" />
               </motion.button>
             </form>
