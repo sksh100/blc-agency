@@ -26,17 +26,17 @@ export default function Footer() {
             <h4 className="text-luxury-dark-gray font-semibold mb-4 uppercase tracking-wider text-xs sm:text-sm">{t('footer.quickLinks')}</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm">
+                <Link href="/about" className="block text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm py-1 min-h-[32px] flex items-center">
                   {t('nav.about')}
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm">
+                <Link href="/services" className="block text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm py-1 min-h-[32px] flex items-center">
                   {t('nav.services')}
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm">
+                <Link href="/contact" className="block text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm py-1 min-h-[32px] flex items-center">
                   {t('nav.contact')}
                 </Link>
               </li>
@@ -48,37 +48,37 @@ export default function Footer() {
             <h4 className="text-luxury-dark-gray font-semibold mb-4 uppercase tracking-wider text-xs sm:text-sm">{t('footer.services')}</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/services/gcc-luxury-market-pr" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
+                <Link href="/services/gcc-luxury-market-pr" className="block text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm py-1 min-h-[32px] flex items-center">
                   {t('services.categories.gccPR.title')}
                 </Link>
               </li>
               <li>
-                <Link href="/services/luxury-hospitality-enhancement" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
+                <Link href="/services/luxury-hospitality-enhancement" className="block text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm py-1 min-h-[32px] flex items-center">
                   {t('services.categories.hospitality.title')}
                 </Link>
               </li>
               <li>
-                <Link href="/services/government-destination-strategy" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
+                <Link href="/services/government-destination-strategy" className="block text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm py-1 min-h-[32px] flex items-center">
                   {t('services.categories.government.title')}
                 </Link>
               </li>
               <li>
-                <Link href="/services/fashion-industry-consulting" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
+                <Link href="/services/fashion-industry-consulting" className="block text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm py-1 min-h-[32px] flex items-center">
                   {t('services.categories.fashion.title')}
                 </Link>
               </li>
               <li>
-                <Link href="/services/luxury-concierge-services" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
+                <Link href="/services/luxury-concierge-services" className="block text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm py-1 min-h-[32px] flex items-center">
                   {t('services.categories.concierge.title')}
                 </Link>
               </li>
               <li>
-                <Link href="/services/digital-presence-brand-experience" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
+                <Link href="/services/digital-presence-brand-experience" className="block text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm py-1 min-h-[32px] flex items-center">
                   {t('services.categories.digital.title')}
                 </Link>
               </li>
               <li>
-                <Link href="/services/family-offices-staff-excellence" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
+                <Link href="/services/family-offices-staff-excellence" className="block text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm py-1 min-h-[32px] flex items-center">
                   {t('services.categories.familyOffices.title')}
                 </Link>
               </li>
@@ -89,23 +89,23 @@ export default function Footer() {
         {/* Legal Links & Social */}
         <div className="pt-8 border-t border-luxury-light-gray">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 mb-6">
-            <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 sm:gap-6 text-xs sm:text-sm">
-                  <Link href="/privacy-policy" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 sm:gap-4 md:gap-6 text-xs sm:text-sm">
+                  <Link href="/privacy-policy" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light py-2 min-h-[32px] flex items-center">
                     {t('footer.privacyPolicy')}
                   </Link>
-                  <Link href="/terms-of-service" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light">
+                  <Link href="/terms-of-service" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light py-2 min-h-[32px] flex items-center">
                     {t('footer.termsOfService')}
                   </Link>
-                  <Link href="/cookie-policy" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light">
+                  <Link href="/cookie-policy" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light py-2 min-h-[32px] flex items-center">
                     {t('footer.cookiePolicy')}
                   </Link>
             </div>
-            <div className="flex items-center space-x-6">
+            <div className="flex items-center justify-center md:justify-start space-x-4 sm:space-x-6">
               <motion.a
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 border border-luxury-royal-blue/30 flex items-center justify-center hover:bg-luxury-royal-blue/10 hover:border-luxury-royal-blue transition-all duration-300"
+                className="w-10 h-10 sm:w-12 sm:h-12 border border-luxury-royal-blue/30 flex items-center justify-center hover:bg-luxury-royal-blue/10 hover:border-luxury-royal-blue transition-all duration-300 min-w-[44px] min-h-[44px]"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 aria-label="LinkedIn"
@@ -116,7 +116,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 border border-luxury-royal-blue/30 flex items-center justify-center hover:bg-luxury-royal-blue/10 hover:border-luxury-royal-blue transition-all duration-300"
+                className="w-10 h-10 sm:w-12 sm:h-12 border border-luxury-royal-blue/30 flex items-center justify-center hover:bg-luxury-royal-blue/10 hover:border-luxury-royal-blue transition-all duration-300 min-w-[44px] min-h-[44px]"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 aria-label="Instagram"
@@ -127,7 +127,7 @@ export default function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 border border-luxury-royal-blue/30 flex items-center justify-center hover:bg-luxury-royal-blue/10 hover:border-luxury-royal-blue transition-all duration-300"
+                className="w-10 h-10 sm:w-12 sm:h-12 border border-luxury-royal-blue/30 flex items-center justify-center hover:bg-luxury-royal-blue/10 hover:border-luxury-royal-blue transition-all duration-300 min-w-[44px] min-h-[44px]"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 aria-label="Twitter"

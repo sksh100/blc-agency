@@ -33,13 +33,13 @@ export default function LanguageSwitcher() {
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 px-3 py-2 text-sm font-light tracking-wider uppercase text-luxury-dark-gray hover:text-luxury-royal-blue transition-colors duration-300 border border-luxury-royal-blue/30 hover:border-luxury-royal-blue"
+        className="flex items-center space-x-1 sm:space-x-2 px-2 sm:px-3 py-2 text-xs sm:text-sm font-light tracking-wider uppercase text-luxury-dark-gray hover:text-luxury-royal-blue transition-colors duration-300 border border-luxury-royal-blue/30 hover:border-luxury-royal-blue min-h-[44px]"
         aria-label="Change language"
       >
         <Globe className="w-4 h-4" />
         <span className="hidden sm:inline">{currentLang.flag}</span>
         <span className="hidden md:inline">{currentLang.name}</span>
-        <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
+        <ChevronDown className={`w-3 h-3 sm:w-4 sm:h-4 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
       </button>
 
       <AnimatePresence>
@@ -59,7 +59,7 @@ export default function LanguageSwitcher() {
                     setLanguage(lang.code as 'en' | 'fr' | 'ar' | 'it')
                     setIsOpen(false)
                   }}
-                  className={`w-full px-4 py-3 text-left text-sm font-light text-luxury-dark-gray hover:bg-luxury-royal-blue/5 hover:text-luxury-royal-blue transition-colors duration-200 flex items-center space-x-3 ${
+                  className={`w-full px-4 py-3 text-left text-sm font-light text-luxury-dark-gray hover:bg-luxury-royal-blue/5 hover:text-luxury-royal-blue transition-colors duration-200 flex items-center space-x-3 min-h-[44px] ${
                     language === lang.code ? 'bg-luxury-royal-blue/10 text-luxury-royal-blue' : ''
                   }`}
                 >

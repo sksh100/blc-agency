@@ -43,18 +43,18 @@ export default function AboutUs() {
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            className="space-y-8 md:pr-8"
+            className="space-y-6 sm:space-y-8 md:pr-8"
           >
-            <p className="museum-body text-lg md:text-xl text-luxury-medium-gray leading-relaxed">
+            <p className="museum-body text-sm sm:text-base md:text-lg lg:text-xl text-luxury-medium-gray leading-relaxed">
               {t('about.paragraph1')}
             </p>
-            <p className="museum-body text-lg md:text-xl text-luxury-medium-gray leading-relaxed">
+            <p className="museum-body text-sm sm:text-base md:text-lg lg:text-xl text-luxury-medium-gray leading-relaxed">
               {t('about.paragraph2')}
             </p>
-            <p className="museum-body text-lg md:text-xl text-luxury-medium-gray leading-relaxed">
+            <p className="museum-body text-sm sm:text-base md:text-lg lg:text-xl text-luxury-medium-gray leading-relaxed">
               {t('about.paragraph3')}
             </p>
-            <p className="museum-body text-lg md:text-xl text-luxury-medium-gray leading-relaxed">
+            <p className="museum-body text-sm sm:text-base md:text-lg lg:text-xl text-luxury-medium-gray leading-relaxed">
               {t('about.paragraph4')}
             </p>
           </motion.div>
@@ -76,33 +76,33 @@ export default function AboutUs() {
               />
             </div>
             
-            <div className="glass-effect luxury-shadow p-6 sm:p-8 md:p-10 lg:p-12 rounded-sm relative z-10">
-              <div className="space-y-6">
-                <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 border border-luxury-royal-blue flex items-center justify-center">
-                        <span className="text-luxury-royal-blue font-bold text-xl">01</span>
+            <div className="glass-effect luxury-shadow p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 rounded-sm relative z-10">
+              <div className="space-y-4 sm:space-y-6">
+                <div className="flex items-start sm:items-center space-x-3 sm:space-x-4">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 border border-luxury-royal-blue flex items-center justify-center flex-shrink-0">
+                        <span className="text-luxury-royal-blue font-bold text-base sm:text-xl">01</span>
                       </div>
                       <div>
-                        <h3 className="text-xl font-serif font-semibold text-luxury-dark-gray mb-1">{t('about.keyPoint1Title')}</h3>
-                        <p className="text-luxury-medium-gray text-sm font-light">{t('about.keyPoint1Desc')}</p>
+                        <h3 className="text-base sm:text-lg md:text-xl font-serif font-semibold text-luxury-dark-gray mb-1">{t('about.keyPoint1Title')}</h3>
+                        <p className="text-luxury-medium-gray text-xs sm:text-sm font-light">{t('about.keyPoint1Desc')}</p>
                       </div>
                     </div>
-                    <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 border border-luxury-royal-blue flex items-center justify-center">
-                        <span className="text-luxury-royal-blue font-bold text-xl">02</span>
+                    <div className="flex items-start sm:items-center space-x-3 sm:space-x-4">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 border border-luxury-royal-blue flex items-center justify-center flex-shrink-0">
+                        <span className="text-luxury-royal-blue font-bold text-base sm:text-xl">02</span>
                       </div>
                       <div>
-                        <h3 className="text-xl font-serif font-semibold text-luxury-dark-gray mb-1">{t('about.keyPoint2Title')}</h3>
-                        <p className="text-luxury-medium-gray text-sm font-light">{t('about.keyPoint2Desc')}</p>
+                        <h3 className="text-base sm:text-lg md:text-xl font-serif font-semibold text-luxury-dark-gray mb-1">{t('about.keyPoint2Title')}</h3>
+                        <p className="text-luxury-medium-gray text-xs sm:text-sm font-light">{t('about.keyPoint2Desc')}</p>
                       </div>
                     </div>
-                    <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 border border-luxury-royal-blue flex items-center justify-center">
-                        <span className="text-luxury-royal-blue font-bold text-xl">03</span>
+                    <div className="flex items-start sm:items-center space-x-3 sm:space-x-4">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 border border-luxury-royal-blue flex items-center justify-center flex-shrink-0">
+                        <span className="text-luxury-royal-blue font-bold text-base sm:text-xl">03</span>
                       </div>
                       <div>
-                        <h3 className="text-xl font-serif font-semibold text-luxury-dark-gray mb-1">{t('about.keyPoint3Title')}</h3>
-                        <p className="text-luxury-medium-gray text-sm font-light">{t('about.keyPoint3Desc')}</p>
+                        <h3 className="text-base sm:text-lg md:text-xl font-serif font-semibold text-luxury-dark-gray mb-1">{t('about.keyPoint3Title')}</h3>
+                        <p className="text-luxury-medium-gray text-xs sm:text-sm font-light">{t('about.keyPoint3Desc')}</p>
                   </div>
                 </div>
               </div>

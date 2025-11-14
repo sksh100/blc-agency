@@ -176,10 +176,10 @@ export default function Navigation() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass-effect"
+            className="md:hidden glass-effect border-t border-luxury-light-gray"
           >
             <div className="px-4 py-6 space-y-4">
-              <div className="mb-4">
+              <div className="mb-4 pb-4 border-b border-luxury-light-gray">
                 <LanguageSwitcher />
               </div>
               {navItems.map((item) => (
@@ -188,7 +188,7 @@ export default function Navigation() {
                     <div>
                       <button
                         onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
-                        className="w-full flex items-center justify-between text-sm font-light tracking-wider uppercase text-luxury-dark-gray hover:text-luxury-royal-blue transition-colors"
+                        className="w-full flex items-center justify-between text-sm font-light tracking-wider uppercase text-luxury-dark-gray hover:text-luxury-royal-blue transition-colors py-2 min-h-[44px]"
                       >
                         {item.name}
                         <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
@@ -205,7 +205,7 @@ export default function Navigation() {
                               <Link
                                 key={service.slug}
                                 href={`/services/${service.slug}`}
-                                className="block text-sm font-light text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors py-2"
+                                className="block text-xs sm:text-sm font-light text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors py-2 min-h-[44px] flex items-center"
                                 onClick={() => {
                                   setMobileMenuOpen(false)
                                   setServicesDropdownOpen(false)
@@ -216,7 +216,7 @@ export default function Navigation() {
                             ))}
                             <Link
                               href="/services"
-                              className="block text-sm font-semibold text-luxury-royal-blue py-2"
+                              className="block text-xs sm:text-sm font-semibold text-luxury-royal-blue py-2 min-h-[44px] flex items-center"
                               onClick={() => {
                                 setMobileMenuOpen(false)
                                 setServicesDropdownOpen(false)
@@ -231,7 +231,7 @@ export default function Navigation() {
                   ) : (
                     <Link
                       href={item.href}
-                      className="block text-sm font-light tracking-wider uppercase text-luxury-dark-gray hover:text-luxury-royal-blue transition-colors"
+                      className="block text-sm font-light tracking-wider uppercase text-luxury-dark-gray hover:text-luxury-royal-blue transition-colors py-2 min-h-[44px] flex items-center"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}

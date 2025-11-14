@@ -80,7 +80,7 @@ export default function Portfolio() {
           <div className="w-32 h-px bg-luxury-royal-blue/30 mt-12" />
         </motion.div>
 
-        <div ref={ref} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-[250px] sm:auto-rows-[280px] gap-4 lg:gap-6">
+        <div ref={ref} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-[200px] sm:auto-rows-[250px] md:auto-rows-[280px] gap-3 sm:gap-4 md:gap-6">
           {portfolioItems.map((item, index) => (
             <motion.div
               key={item.id}
@@ -126,7 +126,7 @@ export default function Portfolio() {
               </div>
 
               {/* Content */}
-              <div className="relative z-10 h-full flex flex-col justify-between p-4 sm:p-6 md:p-8 lg:p-10 pointer-events-none">
+              <div className="relative z-10 h-full flex flex-col justify-between p-3 sm:p-4 md:p-6 lg:p-8 xl:p-10 pointer-events-none">
                 <div className="flex-1 flex flex-col justify-between">
                   <div>
                     <motion.span
@@ -167,8 +167,8 @@ export default function Portfolio() {
               </div>
 
               {/* Corner Accent */}
-              <div className="absolute top-0 right-0 w-24 h-24 border-t border-r border-white/20 group-hover:border-white/40 transition-colors duration-300" />
-              <div className="absolute bottom-0 left-0 w-24 h-24 border-b border-l border-white/20 group-hover:border-white/40 transition-colors duration-300" />
+              <div className="absolute top-0 right-0 w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 border-t border-r border-white/20 group-hover:border-white/40 transition-colors duration-300" />
+              <div className="absolute bottom-0 left-0 w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 border-b border-l border-white/20 group-hover:border-white/40 transition-colors duration-300" />
 
               {/* Hover Glow Effect */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">

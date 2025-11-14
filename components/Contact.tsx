@@ -69,38 +69,38 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="space-y-6">
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 border border-luxury-royal-blue flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-5 h-5 text-luxury-royal-blue" />
+            <div className="space-y-5 sm:space-y-6">
+              <div className="flex items-start space-x-3 sm:space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 border border-luxury-royal-blue flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-luxury-royal-blue" />
                 </div>
-                <div>
-                  <h4 className="text-luxury-dark-gray font-semibold mb-1">{t('contact.email')}</h4>
-                  <a href="mailto:contact@blcagency.com" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light">
+                <div className="min-w-0 flex-1">
+                  <h4 className="text-sm sm:text-base text-luxury-dark-gray font-semibold mb-1">{t('contact.email')}</h4>
+                  <a href="mailto:contact@blcagency.com" className="text-xs sm:text-sm text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light break-all">
                     contact@blcagency.com
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 border border-luxury-royal-blue flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-5 h-5 text-luxury-royal-blue" />
+              <div className="flex items-start space-x-3 sm:space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 border border-luxury-royal-blue flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-luxury-royal-blue" />
                 </div>
-                <div>
-                  <h4 className="text-luxury-dark-gray font-semibold mb-1">{t('contact.phone')}</h4>
-                  <a href="tel:+1234567890" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light">
+                <div className="min-w-0 flex-1">
+                  <h4 className="text-sm sm:text-base text-luxury-dark-gray font-semibold mb-1">{t('contact.phone')}</h4>
+                  <a href="tel:+1234567890" className="text-xs sm:text-sm text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light">
                     +1 (234) 567-8900
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 border border-luxury-royal-blue flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-luxury-royal-blue" />
+              <div className="flex items-start space-x-3 sm:space-x-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 border border-luxury-royal-blue flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-luxury-royal-blue" />
                 </div>
-                <div>
-                  <h4 className="text-luxury-dark-gray font-semibold mb-1">{t('contact.location')}</h4>
-                  <p className="text-luxury-medium-gray font-light whitespace-pre-line">
+                <div className="min-w-0 flex-1">
+                  <h4 className="text-sm sm:text-base text-luxury-dark-gray font-semibold mb-1">{t('contact.location')}</h4>
+                  <p className="text-xs sm:text-sm text-luxury-medium-gray font-light whitespace-pre-line">
                     {t('contact.locationDetails')}
                   </p>
                 </div>
@@ -114,9 +114,9 @@ export default function Contact() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <form onSubmit={handleSubmit} className="glass-effect luxury-shadow p-6 sm:p-8 space-y-5 sm:space-y-6">
+            <form onSubmit={handleSubmit} className="glass-effect luxury-shadow p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-5 md:space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-light text-luxury-medium-gray mb-2 uppercase tracking-wider">
+                <label htmlFor="name" className="block text-xs sm:text-sm font-light text-luxury-medium-gray mb-2 uppercase tracking-wider">
                   {t('contact.form.name')}
                 </label>
                 <input
@@ -126,13 +126,13 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full bg-white border border-luxury-light-gray px-4 py-3 text-luxury-dark-gray placeholder-luxury-medium-gray focus:outline-none focus:border-luxury-royal-blue transition-colors font-light"
+                  className="w-full bg-white border border-luxury-light-gray px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base text-luxury-dark-gray placeholder-luxury-medium-gray focus:outline-none focus:border-luxury-royal-blue transition-colors font-light"
                   placeholder={t('contact.form.namePlaceholder')}
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-light text-luxury-medium-gray mb-2 uppercase tracking-wider">
+                <label htmlFor="email" className="block text-xs sm:text-sm font-light text-luxury-medium-gray mb-2 uppercase tracking-wider">
                   {t('contact.form.email')}
                 </label>
                 <input
@@ -142,13 +142,13 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full bg-white border border-luxury-light-gray px-4 py-3 text-luxury-dark-gray placeholder-luxury-medium-gray focus:outline-none focus:border-luxury-royal-blue transition-colors font-light"
+                  className="w-full bg-white border border-luxury-light-gray px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base text-luxury-dark-gray placeholder-luxury-medium-gray focus:outline-none focus:border-luxury-royal-blue transition-colors font-light"
                   placeholder={t('contact.form.emailPlaceholder')}
                 />
               </div>
 
               <div>
-                <label htmlFor="company" className="block text-sm font-light text-luxury-medium-gray mb-2 uppercase tracking-wider">
+                <label htmlFor="company" className="block text-xs sm:text-sm font-light text-luxury-medium-gray mb-2 uppercase tracking-wider">
                   {t('contact.form.company')}
                 </label>
                 <input
@@ -157,13 +157,13 @@ export default function Contact() {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full bg-white border border-luxury-light-gray px-4 py-3 text-luxury-dark-gray placeholder-luxury-medium-gray focus:outline-none focus:border-luxury-royal-blue transition-colors font-light"
+                  className="w-full bg-white border border-luxury-light-gray px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base text-luxury-dark-gray placeholder-luxury-medium-gray focus:outline-none focus:border-luxury-royal-blue transition-colors font-light"
                   placeholder={t('contact.form.companyPlaceholder')}
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-light text-luxury-medium-gray mb-2 uppercase tracking-wider">
+                <label htmlFor="message" className="block text-xs sm:text-sm font-light text-luxury-medium-gray mb-2 uppercase tracking-wider">
                   {t('contact.form.message')}
                 </label>
                 <textarea
@@ -173,19 +173,19 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full bg-white border border-luxury-light-gray px-4 py-3 text-luxury-dark-gray placeholder-luxury-medium-gray focus:outline-none focus:border-luxury-royal-blue transition-colors font-light resize-none"
+                  className="w-full bg-white border border-luxury-light-gray px-3 sm:px-4 py-2.5 sm:py-3 text-sm sm:text-base text-luxury-dark-gray placeholder-luxury-medium-gray focus:outline-none focus:border-luxury-royal-blue transition-colors font-light resize-none"
                   placeholder={t('contact.form.messagePlaceholder')}
                 />
               </div>
 
               <motion.button
                 type="submit"
-                className="w-full px-8 py-4 bg-luxury-royal-blue text-white font-semibold uppercase tracking-wider flex items-center justify-center space-x-2 luxury-glow hover:bg-luxury-deep-blue hover:shadow-2xl transition-all duration-300"
+                className="w-full px-6 sm:px-8 py-3 sm:py-4 bg-luxury-royal-blue text-white text-sm sm:text-base font-semibold uppercase tracking-wider flex items-center justify-center space-x-2 luxury-glow hover:bg-luxury-deep-blue hover:shadow-2xl transition-all duration-300 min-h-[44px]"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
                 <span>{t('contact.form.submit')}</span>
-                <Send className="w-5 h-5" />
+                <Send className="w-4 h-4 sm:w-5 sm:h-5" />
               </motion.button>
             </form>
           </motion.div>

@@ -67,7 +67,7 @@ export default function Hero() {
           >
             <motion.a
               href="#contact"
-              className="px-6 sm:px-8 py-3 sm:py-4 bg-luxury-royal-blue text-white font-semibold uppercase tracking-wider text-sm sm:text-base rounded-sm luxury-glow hover:bg-luxury-deep-blue hover:shadow-2xl transition-all duration-300 text-center"
+              className="px-6 sm:px-8 py-3 sm:py-4 bg-luxury-royal-blue text-white font-semibold uppercase tracking-wider text-sm sm:text-base rounded-sm luxury-glow hover:bg-luxury-deep-blue hover:shadow-2xl transition-all duration-300 text-center min-h-[44px] flex items-center justify-center"
               whileHover={{ scale: 1.05, boxShadow: '0 0 40px rgba(30, 58, 95, 0.5)' }}
               whileTap={{ scale: 0.95 }}
             >
@@ -75,7 +75,7 @@ export default function Hero() {
             </motion.a>
             <motion.a
               href="#about"
-              className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-luxury-royal-blue text-luxury-royal-blue font-semibold uppercase tracking-wider text-sm sm:text-base rounded-sm hover:bg-luxury-royal-blue/5 transition-all duration-300 text-center"
+              className="px-6 sm:px-8 py-3 sm:py-4 border-2 border-luxury-royal-blue text-luxury-royal-blue font-semibold uppercase tracking-wider text-sm sm:text-base rounded-sm hover:bg-luxury-royal-blue/5 transition-all duration-300 text-center min-h-[44px] flex items-center justify-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

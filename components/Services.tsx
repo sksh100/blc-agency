@@ -80,15 +80,15 @@ export default function Services() {
                     <div className="grid lg:grid-cols-3 gap-8 sm:gap-12 md:gap-16 lg:gap-24 items-start">
                       {/* Left Column - Icon & Title */}
                       <div className="lg:col-span-1">
-                        <div className="sticky top-32">
-                          <div className="w-16 h-16 border border-luxury-royal-blue/30 flex items-center justify-center mb-8 group-hover:bg-luxury-royal-blue/5 transition-all duration-500">
-                            <Icon className="w-8 h-8 text-luxury-royal-blue/80" />
+                        <div className="lg:sticky lg:top-32">
+                          <div className="w-12 h-12 sm:w-16 sm:h-16 border border-luxury-royal-blue/30 flex items-center justify-center mb-6 sm:mb-8 group-hover:bg-luxury-royal-blue/5 transition-all duration-500">
+                            <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-luxury-royal-blue/80" />
                           </div>
-                          <p className="museum-label mb-4">{String(index + 1).padStart(2, '0')}</p>
-                          <h3 className="museum-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-luxury-dark-gray mb-6 leading-[1.1] group-hover:text-luxury-royal-blue/90 transition-colors duration-300">
+                          <p className="museum-label mb-3 sm:mb-4">{String(index + 1).padStart(2, '0')}</p>
+                          <h3 className="museum-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-luxury-dark-gray mb-4 sm:mb-6 leading-[1.1] group-hover:text-luxury-royal-blue/90 transition-colors duration-300">
                             {categoryData.title}
                           </h3>
-                          <p className="museum-body text-luxury-medium-gray text-sm sm:text-base leading-relaxed italic">
+                          <p className="museum-body text-luxury-medium-gray text-xs sm:text-sm md:text-base leading-relaxed italic">
                             {categoryData.shortDesc}
                           </p>
                         </div>
@@ -96,12 +96,12 @@ export default function Services() {
 
                       {/* Right Column - Content */}
                       <div className="lg:col-span-2">
-                        <div className="glass-effect luxury-shadow p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20">
-                          <p className="museum-body text-luxury-medium-gray text-base sm:text-lg md:text-xl leading-relaxed mb-12">
+                        <div className="glass-effect luxury-shadow p-4 sm:p-6 md:p-8 lg:p-12 xl:p-16">
+                          <p className="museum-body text-luxury-medium-gray text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-8 sm:mb-10 md:mb-12">
                             {categoryData.description}
                           </p>
 
-                      <div className="grid md:grid-cols-2 gap-8">
+                      <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
                             <div>
                               <h4 className="text-luxury-dark-gray font-semibold mb-4 uppercase tracking-wider text-xs sm:text-sm border-b border-luxury-royal-blue/30 pb-2">
                                 {t('services.servicesInclude')}
