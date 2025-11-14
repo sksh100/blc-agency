@@ -153,20 +153,20 @@ export default function Services() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-24 md:mb-32"
+          className="mb-16 sm:mb-20 md:mb-24 lg:mb-32"
         >
-          <p className="museum-label mb-6">Expertise</p>
-          <h2 className="museum-heading text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-luxury-dark-gray mb-8 leading-[1.05] tracking-tight">
+          <p className="museum-label mb-4 sm:mb-6">Expertise</p>
+          <h2 className="museum-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-luxury-dark-gray mb-6 sm:mb-8 leading-[1.05] tracking-tight">
             <span className="text-luxury-dark-gray">Our</span>{' '}
             <span className="text-gradient">Services</span>
           </h2>
-          <p className="museum-body text-xl md:text-2xl text-luxury-medium-gray max-w-3xl leading-relaxed">
+          <p className="museum-body text-base sm:text-lg md:text-xl lg:text-2xl text-luxury-medium-gray max-w-3xl leading-relaxed">
             Seven primary divisions of expertise, each representing a clear vertical of our luxury consulting
           </p>
           <div className="w-32 h-px bg-luxury-royal-blue/30 mt-12" />
         </motion.div>
 
-        <div className="space-y-32 md:space-y-40">
+        <div className="space-y-16 sm:space-y-24 md:space-y-32 lg:space-y-40">
           {serviceCategories.map((category, index) => {
             const Icon = category.icon
             return (
@@ -177,7 +177,7 @@ export default function Services() {
                 transition={{ duration: 0.8, delay: index * 0.15 }}
                 className="group"
               >
-                    <div className="grid lg:grid-cols-3 gap-16 lg:gap-24 items-start">
+                    <div className="grid lg:grid-cols-3 gap-8 sm:gap-12 md:gap-16 lg:gap-24 items-start">
                       {/* Left Column - Icon & Title */}
                       <div className="lg:col-span-1">
                         <div className="sticky top-32">
@@ -196,7 +196,7 @@ export default function Services() {
 
                       {/* Right Column - Content */}
                       <div className="lg:col-span-2">
-                        <div className="glass-effect luxury-shadow p-12 md:p-16 lg:p-20">
+                        <div className="glass-effect luxury-shadow p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20">
                           <p className="museum-body text-luxury-medium-gray text-lg md:text-xl leading-relaxed mb-12">
                             {category.description}
                           </p>

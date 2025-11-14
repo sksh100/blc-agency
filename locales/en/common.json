@@ -1,0 +1,300 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "viewAllServices": "View All Services"
+  },
+  "hero": {
+    "established": "Established 2016",
+    "title1": "Where Luxury",
+    "title2": "Meets Cultural",
+    "title3": "Intelligence",
+    "subtitle": "Strategic PR, brand consulting, and luxury services bridging the GCC and Europe. We craft narratives that resonate with the most discerning audiences.",
+    "ctaPrimary": "Book a Private Consultation",
+    "ctaSecondary": "Discover More"
+  },
+  "about": {
+    "label": "Heritage",
+    "title": "About Us",
+    "paragraph1": "Based in Abu Dhabi, BLC Agency represents the pinnacle of luxury brand consulting and strategic communication in the GCC. With years of dedicated experience serving ultra-high-net-worth individuals and discerning luxury enterprises, we have cultivated an unparalleled understanding of GCC culture, preferences, and the sophisticated nuances that define excellence in this region.",
+    "paragraph2": "Our expertise is rooted in a profound network of relationships across the Gulf—from elite circles to influential business leaders, media personalities, and cultural tastemakers. This extensive network, combined with our deep cultural intelligence, enables us to deliver results that transcend conventional marketing and public relations.",
+    "paragraph3": "We collaborate exclusively with luxury branding experts from ESSEC Business School in France, one of the world's most prestigious institutions for luxury brand management. This strategic partnership brings together the refined sophistication of European luxury heritage with our intimate knowledge of GCC markets—creating an unmatched synergy that delivers exceptional outcomes for our ultra-high-net-worth clientele.",
+    "paragraph4": "Every engagement is executed with the precision and discretion that ultra-luxury demands. We are true experts who know not only what needs to be done, but precisely how to deliver excellence that exceeds the most exacting standards. Our work is not merely service—it is the curation of legacies for those who accept nothing less than perfection.",
+    "keyPoint1Title": "GCC Cultural Mastery",
+    "keyPoint1Desc": "Years of experience serving ultra-high-net-worth clients across the Gulf",
+    "keyPoint2Title": "ESSEC Excellence",
+    "keyPoint2Desc": "Strategic partnership with luxury branding experts from France",
+    "keyPoint3Title": "Elite Network",
+    "keyPoint3Desc": "Extensive relationships across elite, business, and cultural circles"
+  },
+  "services": {
+    "label": "Expertise",
+    "title": "Our Services",
+    "subtitle": "Seven primary divisions of expertise, each representing a clear vertical of our luxury consulting",
+    "servicesInclude": "Services Include",
+    "industriesServed": "Industries Served",
+    "desiredOutcome": "Desired Outcome",
+    "categories": {
+      "gccPR": {
+        "title": "GCC Luxury Market PR & Communication",
+        "shortDesc": "For global luxury brands entering or expanding in the GCC",
+        "description": "Cultural fluency meets strategic communication. We craft press releases, PR strategies, and brand narratives specifically adapted for GCC media, influencers, and high-net-worth consumers.",
+        "services": [
+          "Press releases crafted in culturally fluent tone",
+          "PR strategies for GCC media & influencers",
+          "Brand storytelling adapted for the region",
+          "Product launches & brand activations",
+          "Event curation with hand-selected GCC suppliers",
+          "VIP & media guestlist management",
+          "Local market adaptation for marketing campaigns",
+          "Celebrity, influencer, and KOL partnerships"
+        ],
+        "industries": [
+          "Real estate",
+          "Hotels & resorts",
+          "Wellness & spa",
+          "Jewellery & watches",
+          "Fashion & haute couture",
+          "Luxury automotive"
+        ],
+        "outcome": "Deliver culturally fluent and impactful PR and communication strategies for the GCC luxury market."
+      },
+      "hospitality": {
+        "title": "Luxury Hospitality Enhancement",
+        "shortDesc": "Helping hotels, resorts, fine-dining restaurants, and spas attract GCC travelers",
+        "description": "Make your properties irresistible to high-spending Gulf visitors. We enhance concepts, design experiences, and refine every touchpoint to align with GCC luxury preferences.",
+        "services": [
+          "Concept curation & enhancement",
+          "Experience design tailored to GCC preferences",
+          "Luxury guest journey mapping",
+          "Menu / wellness program refinement",
+          "High-end photoshoot direction",
+          "Sales & marketing repositioning",
+          "Cultural alignment for staff communication",
+          "PR campaigns targeting GCC luxury travelers",
+          "Staff training for ultra-high-net-worth customer service excellence",
+          "Luxury protocol and discretion training for hospitality teams"
+        ],
+        "outcome": "Make properties irresistible to high-spending Gulf visitors"
+      },
+      "government": {
+        "title": "Government & Destination Strategy",
+        "shortDesc": "Helping governments attract luxury tourism",
+        "description": "Working at policy and strategic tourism level. We develop destination concepts, luxury tourism blueprints, and ultra-luxury experiences that position destinations as premier GCC travel hubs.",
+        "services": [
+          "Destination concept curation",
+          "Luxury tourism blueprint development",
+          "Ultra-luxury experience design",
+          "High-level PR & global messaging",
+          "Cultural positioning for GCC travelers",
+          "Partnerships with luxury operators",
+          "High-spend segmentation strategy",
+          "Staff training programs for ultra-high-net-worth tourist service excellence",
+          "Luxury protocol and cultural sensitivity training for tourism teams"
+        ],
+        "outcome": "Position destinations at policy and strategic tourism level"
+      },
+      "fashion": {
+        "title": "Fashion Industry Consulting & Production Facilitation",
+        "shortDesc": "End-to-end fashion brand consulting",
+        "description": "Transform creative visions into profitable luxury brands. From brand DNA creation to runway production, we facilitate every step of high-end fashion development with European craftsmanship.",
+        "services": [
+          "Brand DNA creation",
+          "Identity & storytelling development",
+          "Production sourcing (Italy, France, Europe)",
+          "High-end fabric sourcing",
+          "Pattern development",
+          "Sample & collection production",
+          "Supplier management",
+          "Runway show production",
+          "Fashion PR in GCC",
+          "Photoshoot production",
+          "Fashion Economics training"
+        ],
+        "outcome": "Transform creative visions into profitable luxury brands"
+      },
+      "concierge": {
+        "title": "Luxury Concierge Services",
+        "shortDesc": "Discreet, premium service for high-net-worth individuals and executives",
+        "description": "Exclusive, high-touch, and private. We provide discreet luxury concierge services for discerning clients who demand the finest in travel, experiences, and lifestyle management.",
+        "services": [
+          "Luxury travel planning",
+          "VIP bookings",
+          "Curated experiences",
+          "High-level coordination",
+          "Lifestyle management"
+        ],
+        "outcome": "Exclusive, high-touch, and private service"
+      },
+      "digital": {
+        "title": "Luxury Digital Presence & Brand Experience",
+        "shortDesc": "We design and manage digital ecosystems that speak directly to the luxury consumer",
+        "description": "We transform digital platforms into luxury experiences—not just marketing channels. Crafted by specialists who understand luxury aesthetics, consumer psychology, and GCC cultural preferences. Your brand becomes desirable, culturally resonant, and aligned with the expectations of the GCC luxury audience.",
+        "services": [
+          "Website creation & creative direction",
+          "Luxury social media channel creation & management",
+          "Culturally fluent content tailored to GCC audiences",
+          "Editorial-style posting (Vogue, Harper's Bazaar Arabia tone)",
+          "High-end art direction for visuals",
+          "Narrative-building for brand desirability",
+          "Audience growth strategies for affluent segments",
+          "Luxury consumer communication strategy",
+          "Brand storytelling for digital platforms",
+          "Photoshoot direction & content production",
+          "Digital launch campaigns"
+        ],
+        "outcome": "Transform digital platforms into luxury experiences—not just marketing channels"
+      },
+      "familyOffices": {
+        "title": "Private Family Offices & Household Staff Excellence",
+        "shortDesc": "Training staff to deliver exceptional service to ultra-high-net-worth principals",
+        "description": "Enabling private family offices and household staff to understand luxury protocols, work with absolute discretion, and deliver the highest levels of respect and service excellence to their principals. We train management executives and household teams to embody the refinement and precision that ultra-high-net-worth families expect.",
+        "services": [
+          "Luxury protocol training for household staff",
+          "Discretion and confidentiality training",
+          "Service excellence programs for family offices",
+          "Cultural sensitivity and respect training",
+          "Management executive training for ultra-high-net-worth service delivery",
+          "Household operations refinement",
+          "Private event coordination training",
+          "Wealth management communication protocols"
+        ],
+        "outcome": "Enable staff to deliver exceptional, discreet, and respectful service to ultra-high-net-worth principals"
+      }
+    }
+  },
+  "digitalPresence": {
+    "title1": "Digital Presence for",
+    "title2": "the Luxury Market",
+    "description1": "We design and manage digital ecosystems that speak directly to the luxury consumer—refined, elevated, culturally attuned, and visually compelling. Crafted by specialists who understand luxury aesthetics, consumer psychology, and GCC cultural preferences.",
+    "description2": "From minimalist, editorial website designs inspired by global luxury brands to culturally fluent social media content in the tone of Vogue and Harper's Bazaar Arabia—we transform digital platforms into luxury experiences.",
+    "cta": "Explore Digital Services",
+    "whatWeCreate": "What We Create",
+    "items": [
+      "Editorial-style luxury websites",
+      "Culturally fluent social media content",
+      "High-end art direction & visuals",
+      "Brand storytelling for digital platforms",
+      "Photoshoot direction & content production",
+      "Digital launch campaigns"
+    ],
+    "quote": "We transform digital platforms into luxury experiences—not just marketing channels."
+  },
+  "portfolio": {
+    "label": "Works",
+    "title": "Our Portfolio",
+    "subtitle": "Excellence delivered across GCC and Europe—events produced, brands elevated, destinations redefined",
+    "explore": "Explore",
+    "items": {
+      "1": {
+        "title": "European Luxury Fashion Brand",
+        "category": "Fashion Production",
+        "description": "GCC market entry with culturally adapted PR and brand storytelling"
+      },
+      "2": {
+        "title": "UAE Luxury Resort",
+        "category": "Hospitality Enhancement",
+        "description": "GCC traveler-focused experience design and PR campaign"
+      },
+      "3": {
+        "title": "Swiss Watchmaker",
+        "category": "GCC PR & Communication",
+        "description": "Press releases and influencer partnerships for GCC expansion"
+      },
+      "4": {
+        "title": "Italian Fashion House",
+        "category": "Fashion Production",
+        "description": "End-to-end production facilitation and GCC fashion PR"
+      },
+      "5": {
+        "title": "GCC Destination Branding",
+        "category": "Government Strategy",
+        "description": "Luxury tourism blueprint and destination positioning"
+      },
+      "6": {
+        "title": "Fine Dining Group",
+        "category": "Hospitality Enhancement",
+        "description": "Menu refinement and cultural alignment for GCC guests"
+      },
+      "7": {
+        "title": "Luxury Brand Website Transformation",
+        "category": "Digital Presence",
+        "description": "Editorial-style website redesign with minimal, high-end aesthetics"
+      },
+      "8": {
+        "title": "GCC Luxury Instagram Strategy",
+        "category": "Digital Presence",
+        "description": "Culturally fluent content in Vogue/Harper's Bazaar Arabia tone"
+      },
+      "9": {
+        "title": "Luxury Brand Content Reels",
+        "category": "Digital Presence",
+        "description": "Editorial-style social media content production and digital storytelling"
+      }
+    }
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "Client Testimonials",
+    "subtitle": "Trusted by luxury brands, governments, and hospitality groups across GCC and Europe",
+    "items": {
+      "1": {
+        "quote": "BLC Agency transformed our European brand's GCC presence with unparalleled cultural intelligence. Their strategic approach made us resonate authentically with GCC luxury consumers.",
+        "author": "Sarah Mitchell",
+        "role": "CEO, European Luxury Fashion House"
+      },
+      "2": {
+        "quote": "Working with BLC Agency has been exceptional. Their expertise in GCC luxury branding and hospitality enhancement is unmatched. They understand the nuances of Gulf luxury preferences.",
+        "author": "Ahmed Al-Mansouri",
+        "role": "Director, UAE Luxury Resort Group"
+      },
+      "3": {
+        "quote": "The team at BLC Agency doesn't just manage PR—they craft legacies. Our destination branding strategy has positioned us as a premier GCC luxury tourism destination.",
+        "author": "Elena Vasquez",
+        "role": "Tourism Strategy Director, Government Entity"
+      }
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Book a Private Consultation",
+    "subtitle": "Begin your journey to elevated brand excellence in the GCC and beyond",
+    "getInTouch": "Get In Touch",
+    "description": "We're here to discuss how we can elevate your brand. Reach out to begin a conversation about your luxury brand's future.",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "locationDetails": "Dubai, UAE\nAbu Dhabi, UAE\nEurope",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your Name",
+      "email": "Email",
+      "emailPlaceholder": "your.email@example.com",
+      "company": "Company",
+      "companyPlaceholder": "Your Company",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "description": "Elevating luxury brands through strategic PR and refined brand consulting. Bridging GCC and Europe with cultural intelligence and sophistication.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
+    "copyright": "All rights reserved."
+  },
+  "cookie": {
+    "title": "Cookie Consent",
+    "message": "We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By clicking \"Accept\", you consent to our use of cookies.",
+    "learnMore": "Learn more",
+    "accept": "Accept",
+    "decline": "Decline"
+  }
+}
+

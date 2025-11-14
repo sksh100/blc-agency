@@ -9,6 +9,30 @@
   
   html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* RTL Support for Arabic */
+  html[dir='rtl'] {
+    direction: rtl;
+  }
+
+  html[dir='rtl'] .text-left {
+    text-align: right;
+  }
+
+  html[dir='rtl'] .text-right {
+    text-align: left;
+  }
+
+  html[dir='rtl'] .ml-auto {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  html[dir='rtl'] .mr-auto {
+    margin-right: 0;
+    margin-left: auto;
   }
   
   body {
@@ -69,12 +93,18 @@
   }
   
   .section-padding {
-    @apply py-32 md:py-48 px-4 sm:px-8 lg:px-12;
+    @apply py-16 sm:py-24 md:py-32 lg:py-48 px-4 sm:px-6 md:px-8 lg:px-12;
   }
 
-  /* Portfolio Grid Auto-rows */
-  .auto-rows-\[280px\] > * {
-    min-height: 280px;
+  /* Portfolio Grid Auto-rows - Mobile Responsive */
+  .auto-rows-\[250px\] > * {
+    min-height: 250px;
+  }
+  
+  @media (min-width: 640px) {
+    .auto-rows-\[250px\] > * {
+      min-height: 280px;
+    }
   }
 
   /* Museum-style typography */
@@ -90,7 +120,7 @@
     font-weight: 300;
     letter-spacing: 0.05em;
     line-height: 1.9;
-    font-size: 1.15em;
+    font-size: clamp(1rem, 2vw, 1.15em);
   }
 
   .museum-label {

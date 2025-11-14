@@ -23,7 +23,7 @@ export default function DigitalPresencePreview() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="grid md:grid-cols-2 gap-12 items-center"
+              className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center"
         >
           {/* Left Column - Content */}
           <motion.div
@@ -35,14 +35,14 @@ export default function DigitalPresencePreview() {
             <div className="w-16 h-16 border border-luxury-royal-blue flex items-center justify-center mb-4">
               <Monitor className="w-8 h-8 text-luxury-royal-blue" />
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold">
               <span className="text-luxury-dark-gray">Digital Presence for</span>{' '}
               <span className="text-gradient">the Luxury Market</span>
             </h2>
-            <p className="text-lg text-luxury-medium-gray leading-relaxed font-light">
+                <p className="text-base sm:text-lg md:text-xl text-luxury-medium-gray leading-relaxed font-light">
               We design and manage digital ecosystems that speak directly to the luxury consumer—refined, elevated, culturally attuned, and visually compelling. Crafted by specialists who understand luxury aesthetics, consumer psychology, and GCC cultural preferences.
             </p>
-            <p className="text-lg text-luxury-medium-gray leading-relaxed font-light">
+                <p className="text-base sm:text-lg md:text-xl text-luxury-medium-gray leading-relaxed font-light">
               From minimalist, editorial website designs inspired by global luxury brands to culturally fluent social media content in the tone of Vogue and Harper's Bazaar Arabia—we transform digital platforms into luxury experiences.
             </p>
             <motion.a
@@ -62,7 +62,7 @@ export default function DigitalPresencePreview() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="relative"
           >
-            <div className="glass-effect luxury-shadow p-8 md:p-12">
+            <div className="glass-effect luxury-shadow p-6 sm:p-8 md:p-10 lg:p-12">
               <h3 className="text-xl font-serif font-semibold text-luxury-dark-gray mb-6">
                 What We Create
               </h3>

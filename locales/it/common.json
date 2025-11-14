@@ -1,0 +1,300 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Chi Siamo",
+    "services": "Servizi",
+    "portfolio": "Portfolio",
+    "contact": "Contatti",
+    "viewAllServices": "Visualizza Tutti i Servizi"
+  },
+  "hero": {
+    "established": "Fondata nel 2016",
+    "title1": "Dove il Lusso",
+    "title2": "Incontra l'Intelligenza",
+    "title3": "Culturale",
+    "subtitle": "Pubbliche relazioni strategiche, consulenza per brand di lusso e servizi di lusso che collegano il GCC e l'Europa. Creiamo narrazioni che risuonano con i pubblici più esigenti.",
+    "ctaPrimary": "Prenota una Consulenza Privata",
+    "ctaSecondary": "Scopri di Più"
+  },
+  "about": {
+    "label": "Eredità",
+    "title": "Chi Siamo",
+    "paragraph1": "Con sede ad Abu Dhabi, BLC Agency rappresenta il vertice della consulenza per brand di lusso e della comunicazione strategica nel GCC. Con anni di esperienza dedicata al servizio di individui ultra-alto patrimonio e aziende di lusso esigenti, abbiamo coltivato una comprensione senza pari della cultura del GCC, delle preferenze e delle sfumature sofisticate che definiscono l'eccellenza in questa regione.",
+    "paragraph2": "La nostra competenza è radicata in una rete profonda di relazioni attraverso il Golfo—dai circoli d'élite ai leader aziendali influenti, personalità dei media e creatori di tendenze culturali. Questa vasta rete, combinata con la nostra profonda intelligenza culturale, ci consente di fornire risultati che trascendono il marketing e le pubbliche relazioni convenzionali.",
+    "paragraph3": "Collaboriamo esclusivamente con esperti di branding di lusso della ESSEC Business School in Francia, una delle istituzioni più prestigiose al mondo per la gestione di brand di lusso. Questa partnership strategica unisce la sofisticazione raffinata del patrimonio del lusso europeo con la nostra conoscenza intima dei mercati del GCC—creando una sinergia senza pari che produce risultati eccezionali per la nostra clientela ultra-alto patrimonio.",
+    "paragraph4": "Ogni impegno è eseguito con la precisione e la discrezione che il lusso ultimo richiede. Siamo veri esperti che sanno non solo cosa deve essere fatto, ma esattamente come fornire un'eccellenza che supera gli standard più esigenti. Il nostro lavoro non è semplicemente un servizio—è la cura di eredità per coloro che non accettano nulla di meno della perfezione.",
+    "keyPoint1Title": "Maestria Culturale del GCC",
+    "keyPoint1Desc": "Anni di esperienza al servizio di clienti ultra-alto patrimonio attraverso il Golfo",
+    "keyPoint2Title": "Eccellenza ESSEC",
+    "keyPoint2Desc": "Partnership strategica con esperti di branding di lusso dalla Francia",
+    "keyPoint3Title": "Rete d'Élite",
+    "keyPoint3Desc": "Relazioni estese attraverso circoli d'élite, aziendali e culturali"
+  },
+  "services": {
+    "label": "Competenza",
+    "title": "I Nostri Servizi",
+    "subtitle": "Sette divisioni principali di competenza, ciascuna rappresentante un verticale chiaro della nostra consulenza di lusso",
+    "servicesInclude": "Servizi Inclusi",
+    "industriesServed": "Settori Serviti",
+    "desiredOutcome": "Risultato Desiderato",
+    "categories": {
+      "gccPR": {
+        "title": "Pubbliche Relazioni & Comunicazione Mercato del Lusso GCC",
+        "shortDesc": "Per brand di lusso globali che entrano o si espandono nel GCC",
+        "description": "La fluidità culturale incontra la comunicazione strategica. Creiamo comunicati stampa, strategie PR e narrazioni di brand specificamente adattate per i media del GCC, influencer e consumatori ad alto patrimonio.",
+        "services": [
+          "Comunicati stampa redatti con tono culturalmente fluente",
+          "Strategie PR per media & influencer del GCC",
+          "Storytelling di brand adattato alla regione",
+          "Lanci prodotti & attivazioni brand",
+          "Curazione eventi con fornitori GCC selezionati a mano",
+          "Gestione liste ospiti VIP & media",
+          "Adattamento mercato locale per campagne marketing",
+          "Partnership celebrità, influencer e KOL"
+        ],
+        "industries": [
+          "Immobiliare",
+          "Hotel & resort",
+          "Benessere & spa",
+          "Gioielleria & orologi",
+          "Moda & alta moda",
+          "Automotive di lusso"
+        ],
+        "outcome": "Fornire strategie PR e comunicazione culturalmente fluenti e impattanti per il mercato del lusso del GCC."
+      },
+      "hospitality": {
+        "title": "Miglioramento Ospitalità di Lusso",
+        "shortDesc": "Aiutare hotel, resort, ristoranti gourmet e spa ad attrarre viaggiatori del GCC",
+        "description": "Rendete le vostre proprietà irresistibili ai visitatori del Golfo ad alto potere d'acquisto. Miglioriamo i concetti, progettiamo esperienze e perfezioniamo ogni punto di contatto per allinearsi alle preferenze di lusso del GCC.",
+        "services": [
+          "Curazione & miglioramento concetti",
+          "Progettazione esperienze su misura per preferenze GCC",
+          "Mappatura percorso ospite di lusso",
+          "Perfezionamento menu / programma benessere",
+          "Direzione fotografica alta gamma",
+          "Riposizionamento vendite & marketing",
+          "Allineamento culturale per comunicazione personale",
+          "Campagne PR mirate a viaggiatori di lusso del GCC",
+          "Formazione personale per eccellenza servizio clienti ultra-alto patrimonio",
+          "Formazione protocollo lusso e discrezione per team ospitalità"
+        ],
+        "outcome": "Rendere le proprietà irresistibili ai visitatori del Golfo ad alto potere d'acquisto"
+      },
+      "government": {
+        "title": "Strategia Governativa & Destinazione",
+        "shortDesc": "Aiutare i governi ad attrarre turismo di lusso",
+        "description": "Lavorare a livello politico e strategico del turismo. Sviluppiamo concetti di destinazione, piani direttori del turismo di lusso ed esperienze ultra-lusso che posizionano le destinazioni come hub di viaggio GCC di primo piano.",
+        "services": [
+          "Curazione concetti destinazione",
+          "Sviluppo piani direttori turismo di lusso",
+          "Progettazione esperienze ultra-lusso",
+          "PR di alto livello & messaggistica globale",
+          "Posizionamento culturale per viaggiatori del GCC",
+          "Partnership con operatori di lusso",
+          "Strategia segmentazione alto potere d'acquisto",
+          "Programmi formazione personale per eccellenza servizio turistico ultra-alto patrimonio",
+          "Formazione protocollo lusso e sensibilità culturale per team turismo"
+        ],
+        "outcome": "Posizionare le destinazioni a livello politico e strategico del turismo"
+      },
+      "fashion": {
+        "title": "Consulenza Industria Moda & Facilitazione Produzione",
+        "shortDesc": "Consulenza brand moda end-to-end",
+        "description": "Trasformare visioni creative in brand di lusso redditizi. Dalla creazione del DNA del brand alla produzione di sfilate, facilitiamo ogni fase dello sviluppo della moda alta gamma con la maestria europea.",
+        "services": [
+          "Creazione DNA brand",
+          "Sviluppo identità & storytelling",
+          "Approvvigionamento produzione (Italia, Francia, Europa)",
+          "Approvvigionamento tessuti alta gamma",
+          "Sviluppo modelli",
+          "Produzione campioni & collezioni",
+          "Gestione fornitori",
+          "Produzione sfilate",
+          "PR Moda nel GCC",
+          "Produzione servizi fotografici",
+          "Formazione Economia della Moda"
+        ],
+        "outcome": "Trasformare visioni creative in brand di lusso redditizi"
+      },
+      "concierge": {
+        "title": "Servizi Concierge di Lusso",
+        "shortDesc": "Servizio discreto e premium per individui e dirigenti ad alto patrimonio",
+        "description": "Esclusivo, ad alto tocco e privato. Forniamo servizi concierge di lusso discreti per clienti esigenti che richiedono il meglio in viaggi, esperienze e gestione dello stile di vita.",
+        "services": [
+          "Pianificazione viaggi di lusso",
+          "Prenotazioni VIP",
+          "Esperienze curate",
+          "Coordinamento di alto livello",
+          "Gestione stile di vita"
+        ],
+        "outcome": "Servizio esclusivo, ad alto tocco e privato"
+      },
+      "digital": {
+        "title": "Presenza Digitale di Lusso & Esperienza Brand",
+        "shortDesc": "Progettiamo e gestiamo ecosistemi digitali che parlano direttamente al consumatore di lusso",
+        "description": "Trasformiamo le piattaforme digitali in esperienze di lusso—non solo canali di marketing. Creati da specialisti che comprendono l'estetica del lusso, la psicologia del consumatore e le preferenze culturali del GCC. Il vostro brand diventa desiderabile, culturalmente risonante e allineato con le aspettative del pubblico di lusso del GCC.",
+        "services": [
+          "Creazione sito web & direzione creativa",
+          "Creazione & gestione canali social media di lusso",
+          "Contenuto culturalmente fluente su misura per audience del GCC",
+          "Posting stile editoriale (tono Vogue, Harper's Bazaar Arabia)",
+          "Direzione artistica alta gamma per visual",
+          "Costruzione narrativa per desiderabilità brand",
+          "Strategie crescita audience per segmenti facoltosi",
+          "Strategia comunicazione consumatore di lusso",
+          "Storytelling brand per piattaforme digitali",
+          "Direzione servizi fotografici & produzione contenuto",
+          "Campagne lancio digitale"
+        ],
+        "outcome": "Trasformare le piattaforme digitali in esperienze di lusso—non solo canali di marketing"
+      },
+      "familyOffices": {
+        "title": "Family Office Privati & Eccellenza Personale Domestico",
+        "shortDesc": "Formazione personale per fornire servizio eccezionale a principali ultra-alto patrimonio",
+        "description": "Abilitare family office privati e personale domestico a comprendere i protocolli di lusso, lavorare con discrezione assoluta e fornire i massimi livelli di rispetto ed eccellenza del servizio ai loro principali. Formiamo dirigenti e team domestici per incarnare il raffinamento e la precisione che le famiglie ultra-alto patrimonio si aspettano.",
+        "services": [
+          "Formazione protocollo lusso per personale domestico",
+          "Formazione discrezione e riservatezza",
+          "Programmi eccellenza servizio per family office",
+          "Formazione sensibilità culturale e rispetto",
+          "Formazione dirigenti per erogazione servizio ultra-alto patrimonio",
+          "Perfezionamento operazioni domestiche",
+          "Formazione coordinamento eventi privati",
+          "Protocolli comunicazione gestione patrimoniale"
+        ],
+        "outcome": "Abilitare il personale a fornire servizio eccezionale, discreto e rispettoso a principali ultra-alto patrimonio"
+      }
+    }
+  },
+  "digitalPresence": {
+    "title1": "Presenza Digitale per",
+    "title2": "il Mercato del Lusso",
+    "description1": "Progettiamo e gestiamo ecosistemi digitali che parlano direttamente al consumatore di lusso—raffinati, elevati, culturalmente sintonizzati e visivamente convincenti. Creati da specialisti che comprendono l'estetica del lusso, la psicologia del consumatore e le preferenze culturali del GCC.",
+    "description2": "Dai design di siti web minimalisti ed editoriali ispirati ai brand di lusso globali al contenuto social media culturalmente fluente nel tono di Vogue e Harper's Bazaar Arabia—trasformiamo le piattaforme digitali in esperienze di lusso.",
+    "cta": "Esplora Servizi Digitali",
+    "whatWeCreate": "Cosa Creiamo",
+    "items": [
+      "Siti web di lusso stile editoriale",
+      "Contenuto social media culturalmente fluente",
+      "Direzione artistica & visual alta gamma",
+      "Storytelling brand per piattaforme digitali",
+      "Direzione servizi fotografici & produzione contenuto",
+      "Campagne lancio digitale"
+    ],
+    "quote": "Trasformiamo le piattaforme digitali in esperienze di lusso—non solo canali di marketing."
+  },
+  "portfolio": {
+    "label": "Opere",
+    "title": "Il Nostro Portfolio",
+    "subtitle": "Eccellenza fornita attraverso GCC ed Europa—eventi prodotti, brand elevati, destinazioni ridefinite",
+    "explore": "Esplora",
+    "items": {
+      "1": {
+        "title": "Brand Moda di Lusso Europeo",
+        "category": "Produzione Moda",
+        "description": "Ingresso mercato GCC con PR culturalmente adattate e storytelling brand"
+      },
+      "2": {
+        "title": "Resort di Lusso EAU",
+        "category": "Miglioramento Ospitalità",
+        "description": "Progettazione esperienza e campagna PR focalizzate su viaggiatori del GCC"
+      },
+      "3": {
+        "title": "Orologiaio Svizzero",
+        "category": "PR & Comunicazione GCC",
+        "description": "Comunicati stampa e partnership influencer per espansione GCC"
+      },
+      "4": {
+        "title": "Maison di Moda Italiana",
+        "category": "Produzione Moda",
+        "description": "Facilitazione produzione end-to-end e PR moda GCC"
+      },
+      "5": {
+        "title": "Branding Destinazione GCC",
+        "category": "Strategia Governativa",
+        "description": "Piano direttore turismo di lusso e posizionamento destinazione"
+      },
+      "6": {
+        "title": "Gruppo Ristorazione Gourmet",
+        "category": "Miglioramento Ospitalità",
+        "description": "Perfezionamento menu e allineamento culturale per ospiti del GCC"
+      },
+      "7": {
+        "title": "Trasformazione Sito Web Brand di Lusso",
+        "category": "Presenza Digitale",
+        "description": "Ridesign sito web stile editoriale con estetica minimalista alta gamma"
+      },
+      "8": {
+        "title": "Strategia Instagram Lusso GCC",
+        "category": "Presenza Digitale",
+        "description": "Contenuto culturalmente fluente nel tono Vogue/Harper's Bazaar Arabia"
+      },
+      "9": {
+        "title": "Reels Contenuto Brand di Lusso",
+        "category": "Presenza Digitale",
+        "description": "Produzione contenuto social media stile editoriale e storytelling digitale"
+      }
+    }
+  },
+  "testimonials": {
+    "label": "Testimonianze",
+    "title": "Testimonianze Clienti",
+    "subtitle": "Fidati da brand di lusso, governi e gruppi di ospitalità attraverso GCC ed Europa",
+    "items": {
+      "1": {
+        "quote": "BLC Agency ha trasformato la presenza GCC del nostro brand europeo con un'intelligenza culturale senza pari. Il loro approccio strategico ci ha fatto risuonare autenticamente con i consumatori di lusso del GCC.",
+        "author": "Sarah Mitchell",
+        "role": "CEO, Maison di Moda di Lusso Europea"
+      },
+      "2": {
+        "quote": "Lavorare con BLC Agency è stato eccezionale. La loro competenza nel branding di lusso GCC e miglioramento dell'ospitalità è senza pari. Comprendono le sfumature delle preferenze di lusso del Golfo.",
+        "author": "Ahmed Al-Mansouri",
+        "role": "Direttore, Gruppo Resort di Lusso EAU"
+      },
+      "3": {
+        "quote": "Il team di BLC Agency non gestisce solo le PR—creano eredità. La nostra strategia di branding della destinazione ci ha posizionati come destinazione turistica di lusso GCC di primo piano.",
+        "author": "Elena Vasquez",
+        "role": "Direttore Strategia Turismo, Entità Governativa"
+      }
+    }
+  },
+  "contact": {
+    "label": "Contatti",
+    "title": "Prenota una Consulenza Privata",
+    "subtitle": "Inizia il tuo viaggio verso l'eccellenza del brand elevato nel GCC e oltre",
+    "getInTouch": "Mettiti in Contatto",
+    "description": "Siamo qui per discutere come possiamo elevare il tuo brand. Contattaci per iniziare una conversazione sul futuro del tuo brand di lusso.",
+    "email": "Email",
+    "phone": "Telefono",
+    "location": "Posizione",
+    "locationDetails": "Dubai, EAU\nAbu Dhabi, EAU\nEuropa",
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Il Tuo Nome",
+      "email": "Email",
+      "emailPlaceholder": "tua.email@esempio.com",
+      "company": "Azienda",
+      "companyPlaceholder": "La Tua Azienda",
+      "message": "Messaggio",
+      "messagePlaceholder": "Raccontaci del tuo progetto...",
+      "submit": "Invia Messaggio"
+    }
+  },
+  "footer": {
+    "description": "Elevare brand di lusso attraverso pubbliche relazioni strategiche e consulenza brand raffinata. Collegando GCC ed Europa con intelligenza culturale e sofisticazione.",
+    "quickLinks": "Link Rapidi",
+    "services": "Servizi",
+    "privacyPolicy": "Politica sulla Privacy",
+    "termsOfService": "Termini di Servizio",
+    "cookiePolicy": "Politica sui Cookie",
+    "copyright": "Tutti i diritti riservati."
+  },
+  "cookie": {
+    "title": "Consenso Cookie",
+    "message": "Utilizziamo i cookie per migliorare la tua esperienza di navigazione, analizzare il traffico del sito e personalizzare i contenuti. Cliccando su \"Accetta\", acconsenti al nostro utilizzo dei cookie.",
+    "learnMore": "Scopri di più",
+    "accept": "Accetta",
+    "decline": "Rifiuta"
+  }
+}
+

@@ -3,45 +3,46 @@
 import { motion } from 'framer-motion'
 import { Linkedin, Instagram, Twitter } from 'lucide-react'
 import Link from 'next/link'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Footer() {
+  const { t } = useLanguage()
   return (
     <footer className="relative bg-luxury-warm-white border-t border-luxury-light-gray">
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-luxury-royal-blue/30 to-transparent" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-8">
           {/* Brand */}
-          <div className="md:col-span-2">
+          <div className="sm:col-span-2 md:col-span-2">
             <h3 className="text-2xl font-serif font-bold text-gradient mb-4">BLC Agency</h3>
-            <p className="text-luxury-medium-gray font-light leading-relaxed max-w-md">
-              Elevating luxury brands through strategic PR and refined brand consulting. 
-              Bridging GCC and Europe with cultural intelligence and sophistication.
+            <p className="text-luxury-medium-gray font-light leading-relaxed max-w-md text-sm sm:text-base">
+              {t('footer.description')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-luxury-dark-gray font-semibold mb-4 uppercase tracking-wider text-sm">Quick Links</h4>
+            <h4 className="text-luxury-dark-gray font-semibold mb-4 uppercase tracking-wider text-xs sm:text-sm">{t('footer.quickLinks')}</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
-                  About
+                <Link href="/about" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm">
+                  {t('nav.about')}
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
-                  Services
+                <Link href="/services" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm">
+                  {t('nav.services')}
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
-                  Portfolio
+                <Link href="/portfolio" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm">
+                  {t('nav.portfolio')}
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
-                  Contact
+                <Link href="/contact" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-xs sm:text-sm">
+                  {t('nav.contact')}
                 </Link>
               </li>
             </ul>
@@ -49,7 +50,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-luxury-dark-gray font-semibold mb-4 uppercase tracking-wider text-sm">Services</h4>
+            <h4 className="text-luxury-dark-gray font-semibold mb-4 uppercase tracking-wider text-xs sm:text-sm">{t('footer.services')}</h4>
             <ul className="space-y-2">
               <li>
                 <Link href="/services/gcc-luxury-market-pr" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light text-sm">
@@ -93,16 +94,16 @@ export default function Footer() {
         {/* Legal Links & Social */}
         <div className="pt-8 border-t border-luxury-light-gray">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 mb-6">
-            <div className="flex flex-wrap items-center gap-6 text-sm">
-              <Link href="/privacy-policy" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light">
-                Privacy Policy
-              </Link>
-              <Link href="/terms-of-service" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light">
-                Terms of Service
-              </Link>
-              <Link href="/cookie-policy" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light">
-                Cookie Policy
-              </Link>
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 sm:gap-6 text-xs sm:text-sm">
+                  <Link href="/privacy-policy" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light">
+                    {t('footer.privacyPolicy')}
+                  </Link>
+                  <Link href="/terms-of-service" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light">
+                    {t('footer.termsOfService')}
+                  </Link>
+                  <Link href="/cookie-policy" className="text-luxury-medium-gray hover:text-luxury-royal-blue transition-colors font-light">
+                    {t('footer.cookiePolicy')}
+                  </Link>
             </div>
             <div className="flex items-center space-x-6">
               <motion.a
@@ -140,11 +141,11 @@ export default function Footer() {
               </motion.a>
             </div>
           </div>
-          <div className="text-center md:text-left">
-            <p className="text-luxury-medium-gray text-sm font-light">
-              © {new Date().getFullYear()} BLC Agency. All rights reserved.
-            </p>
-          </div>
+              <div className="text-center md:text-left">
+                <p className="text-luxury-medium-gray text-xs sm:text-sm font-light">
+                  © {new Date().getFullYear()} BLC Agency. {t('footer.copyright')}
+                </p>
+              </div>
         </div>
       </div>
     </footer>

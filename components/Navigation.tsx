@@ -4,8 +4,11 @@ import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
 import Link from 'next/link'
+import { useLanguage } from '@/contexts/LanguageContext'
+import LanguageSwitcher from './LanguageSwitcher'
 
 export default function Navigation() {
+  const { t } = useLanguage()
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false)
@@ -40,11 +43,11 @@ export default function Navigation() {
   ]
 
   const navItems = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Services', href: '/services', hasDropdown: true },
-    { name: 'Portfolio', href: '/portfolio' },
-    { name: 'Contact', href: '/contact' },
+    { name: t('nav.home'), href: '/', key: 'home' },
+    { name: t('nav.about'), href: '/about', key: 'about' },
+    { name: t('nav.services'), href: '/services', hasDropdown: true, key: 'services' },
+    { name: t('nav.portfolio'), href: '/portfolio', key: 'portfolio' },
+    { name: t('nav.contact'), href: '/contact', key: 'contact' },
   ]
 
   return (
@@ -58,10 +61,10 @@ export default function Navigation() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           <Link
             href="/"
-            className="text-2xl font-serif font-bold text-gradient"
+            className="text-xl sm:text-2xl font-serif font-bold text-gradient"
           >
             <motion.span
               whileHover={{ scale: 1.05 }}
@@ -71,10 +74,11 @@ export default function Navigation() {
             </motion.span>
           </Link>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+              {/* Desktop Menu */}
+          <div className="hidden md:flex items-center space-x-6">
+            <LanguageSwitcher />
             {navItems.map((item) => (
-              <div key={item.name} className="relative" ref={item.hasDropdown ? dropdownRef : null}>
+              <div key={item.key} className="relative" ref={item.hasDropdown ? dropdownRef : null}>
                 {item.hasDropdown ? (
                   <div
                     className="relative"
@@ -121,7 +125,7 @@ export default function Navigation() {
                                 href="/services"
                                 className="block px-6 py-3 text-sm font-semibold text-luxury-royal-blue hover:bg-luxury-royal-blue/5 transition-colors duration-200"
                               >
-                                View All Services
+                                {t('nav.viewAllServices')}
                               </Link>
                             </div>
                           </div>
@@ -176,8 +180,11 @@ export default function Navigation() {
             className="md:hidden glass-effect"
           >
             <div className="px-4 py-6 space-y-4">
+              <div className="mb-4">
+                <LanguageSwitcher />
+              </div>
               {navItems.map((item) => (
-                <div key={item.name}>
+                <div key={item.key}>
                   {item.hasDropdown ? (
                     <div>
                       <button
@@ -216,7 +223,7 @@ export default function Navigation() {
                                 setServicesDropdownOpen(false)
                               }}
                             >
-                              View All Services
+                              {t('nav.viewAllServices')}
                             </Link>
                           </motion.div>
                         )}

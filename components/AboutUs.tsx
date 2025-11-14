@@ -25,10 +25,10 @@ export default function AboutUs() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-24 md:mb-32"
+          className="mb-16 sm:mb-20 md:mb-24 lg:mb-32"
         >
-          <p className="museum-label mb-6">Heritage</p>
-          <h2 className="museum-heading text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-luxury-dark-gray mb-6 leading-[1.05] tracking-tight">
+          <p className="museum-label mb-4 sm:mb-6">Heritage</p>
+          <h2 className="museum-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-luxury-dark-gray mb-4 sm:mb-6 leading-[1.05] tracking-tight">
             <span className="text-luxury-dark-gray">About</span>{' '}
             <span className="text-gradient">Us</span>
           </h2>
@@ -36,7 +36,7 @@ export default function AboutUs() {
         </motion.div>
 
         {/* Museum-style Two Column Layout */}
-        <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-start">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 md:gap-16 lg:gap-24 items-start">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 1, x: 0 }}
@@ -87,7 +87,7 @@ export default function AboutUs() {
               />
             </div>
             
-            <div className="glass-effect luxury-shadow p-8 rounded-sm relative z-10">
+            <div className="glass-effect luxury-shadow p-6 sm:p-8 md:p-10 lg:p-12 rounded-sm relative z-10">
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                       <div className="w-12 h-12 border border-luxury-royal-blue flex items-center justify-center">

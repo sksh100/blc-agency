@@ -1,0 +1,300 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "viewAllServices": "Voir tous les services"
+  },
+  "hero": {
+    "established": "Fondé en 2016",
+    "title1": "Où le Luxe",
+    "title2": "Rencontre l'Intelligence",
+    "title3": "Culturelle",
+    "subtitle": "Relations publiques stratégiques, conseil en marque de luxe et services de luxe reliant le CCG et l'Europe. Nous créons des récits qui résonnent avec les publics les plus exigeants.",
+    "ctaPrimary": "Réserver une Consultation Privée",
+    "ctaSecondary": "Découvrir Plus"
+  },
+  "about": {
+    "label": "Héritage",
+    "title": "À Propos de Nous",
+    "paragraph1": "Basée à Abou Dhabi, BLC Agency représente le summum du conseil en marque de luxe et de la communication stratégique dans le CCG. Forte de nombreuses années d'expérience dédiée au service d'individus à très haut patrimoine et d'entreprises de luxe exigeantes, nous avons développé une compréhension inégalée de la culture du CCG, des préférences et des nuances sophistiquées qui définissent l'excellence dans cette région.",
+    "paragraph2": "Notre expertise s'enracine dans un réseau profond de relations à travers le Golfe—des cercles d'élite aux leaders d'affaires influents, personnalités médiatiques et faiseurs de tendances culturelles. Ce vaste réseau, combiné à notre profonde intelligence culturelle, nous permet de livrer des résultats qui transcendent le marketing et les relations publiques conventionnels.",
+    "paragraph3": "Nous collaborons exclusivement avec des experts en branding de luxe de l'ESSEC Business School en France, l'une des institutions les plus prestigieuses au monde pour la gestion de marques de luxe. Ce partenariat stratégique allie la sophistication raffinée du patrimoine du luxe européen à notre connaissance intime des marchés du CCG—créant une synergie inégalée qui produit des résultats exceptionnels pour notre clientèle à très haut patrimoine.",
+    "paragraph4": "Chaque engagement est exécuté avec la précision et la discrétion que le luxe ultime exige. Nous sommes de vrais experts qui savent non seulement ce qui doit être fait, mais précisément comment livrer une excellence qui dépasse les standards les plus exigeants. Notre travail n'est pas simplement un service—c'est la curation de legs pour ceux qui n'acceptent rien de moins que la perfection.",
+    "keyPoint1Title": "Maîtrise Culturelle du CCG",
+    "keyPoint1Desc": "Années d'expérience au service de clients à très haut patrimoine à travers le Golfe",
+    "keyPoint2Title": "Excellence ESSEC",
+    "keyPoint2Desc": "Partenariat stratégique avec des experts en branding de luxe de France",
+    "keyPoint3Title": "Réseau d'Élite",
+    "keyPoint3Desc": "Relations étendues à travers les cercles d'élite, d'affaires et culturels"
+  },
+  "services": {
+    "label": "Expertise",
+    "title": "Nos Services",
+    "subtitle": "Sept divisions principales d'expertise, chacune représentant un vertical clair de notre conseil en luxe",
+    "servicesInclude": "Services Inclus",
+    "industriesServed": "Industries Desservies",
+    "desiredOutcome": "Résultat Désiré",
+    "categories": {
+      "gccPR": {
+        "title": "Relations Publiques & Communication Marché du Luxe CCG",
+        "shortDesc": "Pour les marques de luxe mondiales entrant ou s'étendant dans le CCG",
+        "description": "La fluidité culturelle rencontre la communication stratégique. Nous créons des communiqués de presse, stratégies RP et récits de marque spécifiquement adaptés aux médias du CCG, influenceurs et consommateurs à haut patrimoine.",
+        "services": [
+          "Communiqués de presse rédigés dans un ton culturellement fluide",
+          "Stratégies RP pour médias & influenceurs du CCG",
+          "Récits de marque adaptés à la région",
+          "Lancements de produits & activations de marque",
+          "Curatelle d'événements avec fournisseurs du CCG sélectionnés à la main",
+          "Gestion de listes VIP & médias",
+          "Adaptation locale pour campagnes marketing",
+          "Partenariats célébrités, influenceurs et KOL"
+        ],
+        "industries": [
+          "Immobilier",
+          "Hôtels & resorts",
+          "Bien-être & spa",
+          "Bijouterie & montres",
+          "Mode & haute couture",
+          "Automobile de luxe"
+        ],
+        "outcome": "Livrer des stratégies RP et de communication culturellement fluides et impactantes pour le marché du luxe du CCG."
+      },
+      "hospitality": {
+        "title": "Amélioration de l'Hospitalité de Luxe",
+        "shortDesc": "Aider les hôtels, resorts, restaurants gastronomiques et spas à attirer les voyageurs du CCG",
+        "description": "Rendez vos propriétés irrésistibles aux visiteurs du Golfe à fort pouvoir d'achat. Nous améliorons les concepts, concevons des expériences et affinons chaque point de contact pour s'aligner avec les préférences de luxe du CCG.",
+        "services": [
+          "Curatelle & amélioration de concepts",
+          "Conception d'expériences adaptées aux préférences du CCG",
+          "Cartographie du parcours client de luxe",
+          "Raffinement menu / programme bien-être",
+          "Direction de photoshoot haut de gamme",
+          "Repositionnement ventes & marketing",
+          "Alignement culturel pour communication du personnel",
+          "Campagnes RP ciblant les voyageurs de luxe du CCG",
+          "Formation du personnel pour excellence service client très haut patrimoine",
+          "Formation protocole luxe et discrétion pour équipes hôtelières"
+        ],
+        "outcome": "Rendre les propriétés irrésistibles aux visiteurs du Golfe à fort pouvoir d'achat"
+      },
+      "government": {
+        "title": "Stratégie Gouvernementale & Destination",
+        "shortDesc": "Aider les gouvernements à attirer le tourisme de luxe",
+        "description": "Travail au niveau politique et stratégique du tourisme. Nous développons des concepts de destination, plans directeurs du tourisme de luxe et expériences ultra-luxe qui positionnent les destinations comme hubs de voyage CCG de premier plan.",
+        "services": [
+          "Curatelle de concepts de destination",
+          "Développement de plans directeurs tourisme de luxe",
+          "Conception d'expériences ultra-luxe",
+          "RP de haut niveau & messagerie globale",
+          "Positionnement culturel pour voyageurs du CCG",
+          "Partenariats avec opérateurs de luxe",
+          "Stratégie de segmentation à fort pouvoir d'achat",
+          "Programmes de formation du personnel pour excellence service touristique très haut patrimoine",
+          "Formation protocole luxe et sensibilité culturelle pour équipes touristiques"
+        ],
+        "outcome": "Positionner les destinations au niveau politique et stratégique du tourisme"
+      },
+      "fashion": {
+        "title": "Conseil Industrie Mode & Facilitation Production",
+        "shortDesc": "Conseil en marque de mode de bout en bout",
+        "description": "Transformer les visions créatives en marques de luxe rentables. De la création d'ADN de marque à la production de défilés, nous facilitons chaque étape du développement de mode haut de gamme avec le savoir-faire européen.",
+        "services": [
+          "Création d'ADN de marque",
+          "Développement identité & récit",
+          "Approvisionnement production (Italie, France, Europe)",
+          "Approvisionnement tissus haut de gamme",
+          "Développement de patrons",
+          "Production échantillons & collections",
+          "Gestion fournisseurs",
+          "Production défilés",
+          "RP Mode dans le CCG",
+          "Production photoshoots",
+          "Formation Économie de la Mode"
+        ],
+        "outcome": "Transformer les visions créatives en marques de luxe rentables"
+      },
+      "concierge": {
+        "title": "Services Conciergerie de Luxe",
+        "shortDesc": "Service discret et premium pour individus et dirigeants à haut patrimoine",
+        "description": "Exclusif, personnalisé et privé. Nous fournissons des services de conciergerie de luxe discrets pour des clients exigeants qui demandent le meilleur en voyage, expériences et gestion de style de vie.",
+        "services": [
+          "Planification voyage de luxe",
+          "Réservations VIP",
+          "Expériences curatées",
+          "Coordination de haut niveau",
+          "Gestion de style de vie"
+        ],
+        "outcome": "Service exclusif, personnalisé et privé"
+      },
+      "digital": {
+        "title": "Présence Numérique de Luxe & Expérience de Marque",
+        "shortDesc": "Nous concevons et gérons des écosystèmes numériques qui parlent directement au consommateur de luxe",
+        "description": "Nous transformons les plateformes numériques en expériences de luxe—pas seulement des canaux marketing. Créés par des spécialistes qui comprennent l'esthétique du luxe, la psychologie du consommateur et les préférences culturelles du CCG. Votre marque devient désirable, culturellement résonnante et alignée avec les attentes du public de luxe du CCG.",
+        "services": [
+          "Création site web & direction créative",
+          "Création & gestion canaux médias sociaux de luxe",
+          "Contenu culturellement fluide adapté aux audiences du CCG",
+          "Publications style éditorial (ton Vogue, Harper's Bazaar Arabia)",
+          "Direction artistique haut de gamme pour visuels",
+          "Construction narrative pour désirabilité de marque",
+          "Stratégies croissance audience pour segments aisés",
+          "Stratégie communication consommateur de luxe",
+          "Récit de marque pour plateformes numériques",
+          "Direction photoshoot & production contenu",
+          "Campagnes lancement numérique"
+        ],
+        "outcome": "Transformer les plateformes numériques en expériences de luxe—pas seulement des canaux marketing"
+      },
+      "familyOffices": {
+        "title": "Bureaux Familiaux Privés & Excellence Personnel Domestique",
+        "shortDesc": "Formation du personnel pour livrer un service exceptionnel aux principaux à très haut patrimoine",
+        "description": "Permettre aux bureaux familiaux privés et au personnel domestique de comprendre les protocoles de luxe, travailler avec une discrétion absolue et livrer les plus hauts niveaux de respect et d'excellence de service à leurs principaux. Nous formons les dirigeants et équipes domestiques pour incarner le raffinement et la précision que les familles à très haut patrimoine attendent.",
+        "services": [
+          "Formation protocole luxe pour personnel domestique",
+          "Formation discrétion et confidentialité",
+          "Programmes excellence service pour bureaux familiaux",
+          "Formation sensibilité culturelle et respect",
+          "Formation dirigeants pour livraison service très haut patrimoine",
+          "Raffinement opérations domestiques",
+          "Formation coordination événements privés",
+          "Protocoles communication gestion patrimoine"
+        ],
+        "outcome": "Permettre au personnel de livrer un service exceptionnel, discret et respectueux aux principaux à très haut patrimoine"
+      }
+    }
+  },
+  "digitalPresence": {
+    "title1": "Présence Numérique pour",
+    "title2": "le Marché du Luxe",
+    "description1": "Nous concevons et gérons des écosystèmes numériques qui parlent directement au consommateur de luxe—raffinés, élevés, culturellement accordés et visuellement convaincants. Créés par des spécialistes qui comprennent l'esthétique du luxe, la psychologie du consommateur et les préférences culturelles du CCG.",
+    "description2": "Des designs de sites web minimalistes et éditoriaux inspirés des marques de luxe mondiales au contenu de médias sociaux culturellement fluide dans le ton de Vogue et Harper's Bazaar Arabia—nous transformons les plateformes numériques en expériences de luxe.",
+    "cta": "Explorer Services Numériques",
+    "whatWeCreate": "Ce Que Nous Créons",
+    "items": [
+      "Sites web de luxe style éditorial",
+      "Contenu médias sociaux culturellement fluide",
+      "Direction artistique & visuels haut de gamme",
+      "Récit de marque pour plateformes numériques",
+      "Direction photoshoot & production contenu",
+      "Campagnes lancement numérique"
+    ],
+    "quote": "Nous transformons les plateformes numériques en expériences de luxe—pas seulement des canaux marketing."
+  },
+  "portfolio": {
+    "label": "Réalisations",
+    "title": "Notre Portfolio",
+    "subtitle": "Excellence livrée à travers le CCG et l'Europe—événements produits, marques élevées, destinations redéfinies",
+    "explore": "Explorer",
+    "items": {
+      "1": {
+        "title": "Marque de Mode de Luxe Européenne",
+        "category": "Production Mode",
+        "description": "Entrée marché CCG avec RP culturellement adaptées et récit de marque"
+      },
+      "2": {
+        "title": "Resort de Luxe EAU",
+        "category": "Amélioration Hospitalité",
+        "description": "Conception d'expérience et campagne RP axées voyageurs du CCG"
+      },
+      "3": {
+        "title": "Horloger Suisse",
+        "category": "RP & Communication CCG",
+        "description": "Communiqués de presse et partenariats influenceurs pour expansion CCG"
+      },
+      "4": {
+        "title": "Maison de Mode Italienne",
+        "category": "Production Mode",
+        "description": "Facilitation production de bout en bout et RP mode CCG"
+      },
+      "5": {
+        "title": "Branding Destination CCG",
+        "category": "Stratégie Gouvernementale",
+        "description": "Plan directeur tourisme de luxe et positionnement destination"
+      },
+      "6": {
+        "title": "Groupe Restauration Gastronomique",
+        "category": "Amélioration Hospitalité",
+        "description": "Raffinement menu et alignement culturel pour invités du CCG"
+      },
+      "7": {
+        "title": "Transformation Site Web Marque de Luxe",
+        "category": "Présence Numérique",
+        "description": "Redesign site web style éditorial avec esthétique minimaliste haut de gamme"
+      },
+      "8": {
+        "title": "Stratégie Instagram Luxe CCG",
+        "category": "Présence Numérique",
+        "description": "Contenu culturellement fluide dans le ton Vogue/Harper's Bazaar Arabia"
+      },
+      "9": {
+        "title": "Reels Contenu Marque de Luxe",
+        "category": "Présence Numérique",
+        "description": "Production contenu médias sociaux style éditorial et récit numérique"
+      }
+    }
+  },
+  "testimonials": {
+    "label": "Témoignages",
+    "title": "Témoignages Clients",
+    "subtitle": "Approuvé par des marques de luxe, gouvernements et groupes hôteliers à travers le CCG et l'Europe",
+    "items": {
+      "1": {
+        "quote": "BLC Agency a transformé la présence CCG de notre marque européenne avec une intelligence culturelle sans pareil. Leur approche stratégique nous a fait résonner authentiquement avec les consommateurs de luxe du CCG.",
+        "author": "Sarah Mitchell",
+        "role": "PDG, Maison de Mode de Luxe Européenne"
+      },
+      "2": {
+        "quote": "Travailler avec BLC Agency a été exceptionnel. Leur expertise en branding de luxe CCG et amélioration de l'hospitalité est inégalée. Ils comprennent les nuances des préférences de luxe du Golfe.",
+        "author": "Ahmed Al-Mansouri",
+        "role": "Directeur, Groupe Resort de Luxe EAU"
+      },
+      "3": {
+        "quote": "L'équipe de BLC Agency ne gère pas seulement les RP—ils créent des legs. Notre stratégie de branding de destination nous a positionnés comme une destination touristique de luxe CCG de premier plan.",
+        "author": "Elena Vasquez",
+        "role": "Directrice Stratégie Tourisme, Entité Gouvernementale"
+      }
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Réserver une Consultation Privée",
+    "subtitle": "Commencez votre voyage vers l'excellence de marque élevée dans le CCG et au-delà",
+    "getInTouch": "Nous Contacter",
+    "description": "Nous sommes là pour discuter de comment nous pouvons élever votre marque. Contactez-nous pour commencer une conversation sur l'avenir de votre marque de luxe.",
+    "email": "Email",
+    "phone": "Téléphone",
+    "location": "Localisation",
+    "locationDetails": "Dubaï, EAU\nAbou Dhabi, EAU\nEurope",
+    "form": {
+      "name": "Nom",
+      "namePlaceholder": "Votre Nom",
+      "email": "Email",
+      "emailPlaceholder": "votre.email@exemple.com",
+      "company": "Entreprise",
+      "companyPlaceholder": "Votre Entreprise",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-nous de votre projet...",
+      "submit": "Envoyer le Message"
+    }
+  },
+  "footer": {
+    "description": "Élever les marques de luxe grâce à des relations publiques stratégiques et un conseil en marque raffiné. Reliant le CCG et l'Europe avec intelligence culturelle et sophistication.",
+    "quickLinks": "Liens Rapides",
+    "services": "Services",
+    "privacyPolicy": "Politique de Confidentialité",
+    "termsOfService": "Conditions de Service",
+    "cookiePolicy": "Politique des Cookies",
+    "copyright": "Tous droits réservés."
+  },
+  "cookie": {
+    "title": "Consentement aux Cookies",
+    "message": "Nous utilisons des cookies pour améliorer votre expérience de navigation, analyser le trafic du site et personnaliser le contenu. En cliquant sur \"Accepter\", vous consentez à notre utilisation des cookies.",
+    "learnMore": "En savoir plus",
+    "accept": "Accepter",
+    "decline": "Refuser"
+  }
+}
+

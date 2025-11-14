@@ -42,27 +42,27 @@ export default function Testimonials() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-24 md:mb-32"
+          className="mb-16 sm:mb-20 md:mb-24 lg:mb-32"
         >
-          <p className="museum-label mb-6">Testimonials</p>
-          <h2 className="museum-heading text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-luxury-dark-gray mb-8 leading-[1.05] tracking-tight">
+          <p className="museum-label mb-4 sm:mb-6">Testimonials</p>
+          <h2 className="museum-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-luxury-dark-gray mb-6 sm:mb-8 leading-[1.05] tracking-tight">
             <span className="text-luxury-dark-gray">Client</span>{' '}
             <span className="text-gradient">Testimonials</span>
           </h2>
-          <p className="museum-body text-xl md:text-2xl text-luxury-medium-gray max-w-2xl leading-relaxed">
+          <p className="museum-body text-base sm:text-lg md:text-xl lg:text-2xl text-luxury-medium-gray max-w-2xl leading-relaxed">
             Trusted by luxury brands, governments, and hospitality groups across GCC and Europe
           </p>
           <div className="w-32 h-px bg-luxury-royal-blue/30 mt-12" />
         </motion.div>
 
-        <div ref={ref} className="grid md:grid-cols-3 gap-10 lg:gap-12">
+            <div ref={ref} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="glass-effect luxury-shadow p-8 relative overflow-hidden"
+              className="glass-effect luxury-shadow p-6 sm:p-8 relative overflow-hidden"
             >
               {/* Background Image */}
               <div className="absolute inset-0 opacity-5">
